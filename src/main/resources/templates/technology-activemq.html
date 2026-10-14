@@ -14,6 +14,7 @@
   <link rel="stylesheet" th:href="@{/css/technology-activemq.css}" href="/css/technology-activemq.css">
   <link rel="stylesheet" th:href="@{/css/site-footer.css}" href="/css/site-footer.css">
   <link rel="stylesheet" th:href="@{/css/solutions-menu.css}" href="/css/solutions-menu.css">
+  <link rel="stylesheet" th:href="@{/css/technology-contact.css}" href="/css/technology-contact.css">
 </head>
 <body id="top">
   <header class="site-header">
@@ -75,7 +76,8 @@
     </section>
 
     <section class="activemq-next-step"><div class="wrap"><div><span class="eyebrow light">Your ActiveMQ next step</span><h2>Keep important messages<br><em>moving between systems.</em></h2><p>Tell us where your integrations are slowing down or becoming difficult to operate. We will help define a practical next step for your ActiveMQ environment.</p><a class="button button-primary" href="/#contact">Contact Mananja Systems <span aria-hidden="true">&#8599;</span></a></div><div class="activemq-next-mark"><img th:src="${technologyLogo}" alt="Apache ActiveMQ logo"><span>APACHE ACTIVEMQ<br>WITH MANANJA SYSTEMS</span></div></div></section>
-  </main>
+    <th:block th:replace="~{fragments/technology-contact :: contact}"></th:block>
+</main>
   <th:block th:replace="~{fragments/site-footer :: siteFooter}"></th:block>
   <script th:src="@{/js/navigation.js}" src="/js/navigation.js" defer></script>
 </body>

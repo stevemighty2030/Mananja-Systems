@@ -178,3 +178,23 @@ softwareContactForm?.addEventListener('submit', (event) => {
   ].join('\n');
   window.location.href = `mailto:hello@mananja.system?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
 });
+
+document.querySelectorAll('.technology-contact-form').forEach((form) => {
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const formData = new FormData(form);
+    const technology = form.dataset.technologyName || 'Technology';
+    const subject = `${technology} enquiry`;
+    const message = [
+      `Technology: ${technology}`,
+      `Name: ${formData.get('name')}`,
+      `Email: ${formData.get('email')}`,
+      `Organisation: ${formData.get('organisation') || 'Not provided'}`,
+      `Area of support: ${formData.get('area')}`,
+      '',
+      'What they want to achieve:',
+      formData.get('message')
+    ].join('\n');
+    window.location.href = `mailto:hello@mananja.system?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+  });
+});

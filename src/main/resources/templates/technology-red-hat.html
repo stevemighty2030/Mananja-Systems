@@ -14,6 +14,7 @@
   <link rel="stylesheet" th:href="@{/css/technology-red-hat.css}" href="/css/technology-red-hat.css">
   <link rel="stylesheet" th:href="@{/css/site-footer.css}" href="/css/site-footer.css">
   <link rel="stylesheet" th:href="@{/css/solutions-menu.css}" href="/css/solutions-menu.css">
+  <link rel="stylesheet" th:href="@{/css/technology-contact.css}" href="/css/technology-contact.css">
 </head>
 <body id="top">
   <header class="site-header">
@@ -75,7 +76,8 @@
     </section>
 
     <section class="redhat-next-step"><div class="wrap"><div><span class="eyebrow light">Your Red Hat next step</span><h2>Make your platform<br><em>work for your teams.</em></h2><p>Tell us what you are building, improving, or operating. We will help you define a practical next step for your Red Hat environment.</p><a class="button button-primary" href="/#contact">Contact Mananja Systems <span aria-hidden="true">&#8599;</span></a></div><div class="redhat-next-mark"><img th:src="${technologyLogo}" alt="Red Hat logo"><span>RED HAT<br>WITH MANANJA SYSTEMS</span></div></div></section>
-  </main>
+    <th:block th:replace="~{fragments/technology-contact :: contact}"></th:block>
+</main>
   <th:block th:replace="~{fragments/site-footer :: siteFooter}"></th:block>
   <script th:src="@{/js/navigation.js}" src="/js/navigation.js" defer></script>
 </body>

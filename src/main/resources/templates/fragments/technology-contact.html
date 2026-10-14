@@ -1,0 +1,29 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+  <th:block th:fragment="contact">
+    <section class="technology-contact-panel" id="technology-contact">
+      <div class="wrap technology-contact-layout">
+        <div class="technology-contact-copy">
+          <span class="eyebrow light" th:text="|Talk with us about ${technology.name}|">Talk with us about this technology</span>
+          <h2>Make your<br><em th:text="${technology.name}">technology</em><br>work for you.</h2>
+          <p>Share what you are planning, improving, or troubleshooting. We’ll help you identify a practical next step for your team and platform.</p>
+          <a href="mailto:hello@mananja.system">Prefer email? hello@mananja.system <span aria-hidden="true">&#8599;</span></a>
+        </div>
+        <form class="technology-contact-form" th:attr="data-technology-name=${technology.name}">
+          <div class="technology-form-heading"><span>TECHNOLOGY ENQUIRY</span><h3>How can we help?</h3></div>
+          <div class="technology-form-grid">
+            <label>Your name<input name="name" autocomplete="name" required></label>
+            <label>Work email<input name="email" type="email" autocomplete="email" required></label>
+            <label>Organisation <span>(optional)</span><input name="organisation" autocomplete="organization"></label>
+            <label>Area of support<select name="area" required><option value="" disabled selected>Choose an area</option><option>Architecture and planning</option><option>Implementation</option><option>Upgrade or migration</option><option>Support and optimisation</option><option>Something else</option></select></label>
+            <label class="technology-message-field">What are you looking to achieve?<textarea name="message" rows="4" required></textarea></label>
+          </div>
+          <button class="technology-form-submit" type="submit">Prepare your enquiry <span aria-hidden="true">&#8599;</span></button>
+          <p class="technology-form-note" aria-live="polite">Your email app will open with your enquiry ready to send.</p>
+        </form>
+      </div>
+    </section>
+  </th:block>
+</body>
+</html>

@@ -1,0 +1,21 @@
+.technology-contact-panel{padding:88px 0;background:linear-gradient(125deg,#171b27,#292d38);color:#fff}
+.technology-contact-layout{display:grid;grid-template-columns:.9fr 1.1fr;align-items:start;gap:clamp(40px,7vw,100px)}
+.technology-contact-copy{padding-top:20px}
+.technology-contact-copy h2{margin:17px 0;color:#fff;font-size:clamp(42px,4.7vw,60px);line-height:1.08;letter-spacing:-.07em}
+.technology-contact-copy h2 em{color:#f06a60;font-style:normal}
+.technology-contact-copy>p{max-width:440px;margin:0 0 24px;color:#d9dbe0;font-size:12px;line-height:1.85}
+.technology-contact-copy>a{color:#ff938b;font-size:11px;font-weight:700}.technology-contact-copy>a span{margin-left:6px}
+.technology-contact-form{padding:30px;border:1px solid #ffffff1f;border-radius:10px;background:#fff;color:#20232b;box-shadow:0 24px 60px #10152226}
+.technology-form-heading>span{color:#df3d35;font-size:9px;font-weight:700;letter-spacing:1.2px}
+.technology-form-heading h3{margin:9px 0 23px;font-size:23px;letter-spacing:-.04em}
+.technology-form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.technology-form-grid label{display:grid;gap:7px;color:#343944;font-size:10px;font-weight:700}
+.technology-form-grid label>span{color:#81848c;font-weight:400}
+.technology-form-grid input,.technology-form-grid select,.technology-form-grid textarea{width:100%;min-height:43px;padding:10px 11px;border:1px solid #dfe1e5;border-radius:4px;background:#fff;color:#242832;font:400 11px "Inter",sans-serif}
+.technology-form-grid textarea{min-height:110px;resize:vertical}
+.technology-form-grid input:focus,.technology-form-grid select:focus,.technology-form-grid textarea:focus{outline:2px solid #df3d3555;border-color:#df3d35}
+.technology-message-field{grid-column:1/-1}
+.technology-form-submit{min-height:46px;display:inline-flex;align-items:center;gap:16px;margin-top:20px;padding:0 19px;border:0;border-radius:3px;background:#df3d35;color:#fff;font:700 11px "Inter",sans-serif;cursor:pointer;transition:background .2s,transform .2s}
+.technology-form-submit:hover{transform:translateY(-2px);background:#c9332c}
+.technology-form-note{margin:12px 0 0;color:#717680;font-size:9px;line-height:1.6}
+@media(max-width:680px){.technology-contact-panel{padding:66px 0}.technology-contact-layout{grid-template-columns:1fr;gap:28px}.technology-contact-copy h2{font-size:clamp(42px,11vw,56px)}.technology-contact-form{padding:22px 18px}.technology-form-grid{grid-template-columns:1fr;gap:13px}.technology-message-field{grid-column:auto}}

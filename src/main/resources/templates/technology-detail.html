@@ -13,6 +13,7 @@
   <link rel="stylesheet" th:href="@{/css/technology-detail.css}" href="/css/technology-detail.css">
   <link rel="stylesheet" th:href="@{/css/site-footer.css}" href="/css/site-footer.css">
   <link rel="stylesheet" th:href="@{/css/solutions-menu.css}" href="/css/solutions-menu.css">
+  <link rel="stylesheet" th:href="@{/css/technology-contact.css}" href="/css/technology-contact.css">
 </head>
 <body id="top">
   <header class="site-header">
@@ -74,7 +75,8 @@
       <div><span class="eyebrow muted">A connected technology foundation</span><h2>Let us make your systems<br><em>work better together.</em></h2></div>
       <div><p>Tell us what you are building, improving, or integrating. We will help you define a practical next step for your technology landscape.</p><a class="button button-primary" href="mailto:hello@mananja.system?subject=Technology%20services%20enquiry">Contact Mananja Systems <span aria-hidden="true">&#8599;</span></a><a class="technology-inline-link" th:if="${technology.name == 'WSO2'}" href="/services/api-integrations">Explore WSO2 API Manager implementation <span aria-hidden="true">&#8594;</span></a></div>
     </section>
-  </main>
+    <th:block th:replace="~{fragments/technology-contact :: contact}"></th:block>
+</main>
   <th:block th:replace="~{fragments/site-footer :: siteFooter}"></th:block>
   <script th:src="@{/js/navigation.js}" src="/js/navigation.js" defer></script>
 </body>
