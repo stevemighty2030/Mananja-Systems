@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171b27">
+  <meta name="description" content="Mananja Systems designs, builds, modernises, and supports software products and platforms that fit your business.">
+  <title>Software &amp; Platforms | Mananja Systems</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" th:href="@{/css/site.css}" href="/css/site.css">
+  <link rel="stylesheet" th:href="@{/css/site-footer.css}" href="/css/site-footer.css">
+  <link rel="stylesheet" th:href="@{/css/solutions-menu.css}" href="/css/solutions-menu.css">
+  <link rel="stylesheet" th:href="@{/css/software-platforms.css}" href="/css/software-platforms.css">
+</head>
+<body id="top">
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Mananja Systems home"><img src="/mananja-mark.svg" alt=""><span class="brand-name">Mananja Systems</span></a>
+    <details class="mobile-menu">
+      <summary aria-label="Open navigation"><span></span><span></span></summary>
+      <nav aria-label="Mobile navigation"><a href="/">Home</a><th:block th:replace="~{fragments/technologies-menu :: mobile}"></th:block><th:block th:replace="~{fragments/solutions-menu :: mobile}"></th:block><a href="/services">Services</a><a href="#software-contact">Contact</a></nav>
+    </details>
+    <nav class="desktop-nav" aria-label="Main navigation"><a href="/">Home</a><th:block th:replace="~{fragments/technologies-menu :: desktop}"></th:block><th:block th:replace="~{fragments/solutions-menu :: desktop}"></th:block><a href="/services">Services</a><a class="nav-contact" href="#software-contact">Let’s talk <span aria-hidden="true">&#8599;</span></a></nav>
+  </header>
+
+  <main>
+    <div class="software-breadcrumb wrap"><a href="/">Home</a><span>/</span><a href="/#solutions">Solutions</a><span>/</span><span>Software &amp; platforms</span></div>
+
+    <section class="software-hero">
+      <div class="wrap software-hero-inner">
+        <div class="software-hero-copy">
+          <div class="eyebrow"><span></span> Mananja Systems / Software &amp; platforms</div>
+          <h1>Software built<br>to <em>move you forward.</em></h1>
+          <p>Design and deliver the digital products your customers and people actually need. We bring product thinking, software engineering, and platform integration together from the first idea through ongoing improvement.</p>
+          <div class="software-hero-actions"><a class="button button-primary" href="#software-contact">Discuss your project <span aria-hidden="true">&#8595;</span></a><a class="text-link" href="#software-capabilities">Explore our capabilities <span aria-hidden="true">&#8595;</span></a></div>
+          <div class="software-tags"><span>Product development</span><span>Application modernisation</span><span>Platform integration</span></div>
+        </div>
+        <div class="software-visual" aria-label="Software products connecting people, data, and business platforms">
+          <div class="software-orbit software-orbit-one"></div><div class="software-orbit software-orbit-two"></div>
+          <div class="software-product"><span>MANANJA SYSTEMS</span><strong>Software<br>&amp; platforms</strong><i>PRODUCTS THAT CONNECT</i></div>
+          <div class="software-node software-node-one"><span>01</span><b>People</b></div>
+          <div class="software-node software-node-two"><span>02</span><b>Applications</b></div>
+          <div class="software-node software-node-three"><span>03</span><b>Data &amp; APIs</b></div>
+          <div class="software-node software-node-four"><span>04</span><b>Operations</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="software-capabilities section wrap" id="software-capabilities">
+      <div class="section-heading"><div><div class="eyebrow muted">What we can help with</div><h2>From first idea<br><em>to everyday impact.</em></h2></div><p>Build something new, improve an existing application, or connect the platforms your teams already rely on.</p></div>
+      <div class="software-capability-grid">
+        <article><span>01 / SHAPE</span><h3>Product discovery &amp; design</h3><p>Clarify user needs, business goals, and the right first release before investing in a build.</p></article>
+        <article><span>02 / BUILD</span><h3>Custom software</h3><p>Create web applications, portals, and internal tools shaped around real workflows.</p></article>
+        <article><span>03 / IMPROVE</span><h3>Platform modernisation</h3><p>Improve existing applications in manageable steps, with attention to reliability and change.</p></article>
+        <article><span>04 / CONNECT</span><h3>Application integration</h3><p>Connect your product with APIs, data, identity, and enterprise systems around it.</p></article>
+        <article><span>05 / RELEASE</span><h3>Cloud &amp; delivery</h3><p>Set up practical environments, release workflows, and visibility for operating your software.</p></article>
+        <article><span>06 / SUPPORT</span><h3>Ongoing improvement</h3><p>Plan updates, fix issues, and evolve the product as users and business needs change.</p></article>
+      </div>
+    </section>
+
+    <section class="software-approach">
+      <div class="wrap">
+        <div class="section-heading"><div><div class="eyebrow muted">How we work</div><h2>Progress you can<br><em>see and steer.</em></h2></div><p>We keep the work collaborative and practical, with clear decisions and useful checkpoints from discovery to support.</p></div>
+        <div class="software-steps">
+          <article><span>01</span><h3>Understand</h3><p>Map the users, workflows, systems, and outcomes the software needs to support.</p></article>
+          <article><span>02</span><h3>Shape</h3><p>Agree the scope, experience, architecture, and a sensible path to the first release.</p></article>
+          <article><span>03</span><h3>Deliver</h3><p>Build and integrate in clear increments, reviewing progress with your team as we go.</p></article>
+          <article><span>04</span><h3>Improve</h3><p>Support the product in use and use feedback to guide the next improvements.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="software-contact" id="software-contact">
+      <div class="wrap software-contact-inner">
+        <div class="software-contact-copy">
+          <div class="eyebrow light">Start a conversation</div>
+          <h2>What would you<br>like to <em>make possible?</em></h2>
+          <p>Tell us about the software or platform you want to build, improve, or connect. We’ll follow up to understand your goals and discuss a practical next step.</p>
+          <a href="mailto:hello@mananja.system">Prefer email? hello@mananja.system <span aria-hidden="true">&#8599;</span></a>
+        </div>
+        <form class="software-contact-form" id="softwareContactForm">
+          <div class="software-form-heading"><span>PROJECT ENQUIRY</span><h3>Tell us a little about it.</h3></div>
+          <div class="software-form-grid">
+            <label>Your name<input name="name" autocomplete="name" required></label>
+            <label>Work email<input name="email" type="email" autocomplete="email" required></label>
+            <label>Organisation <span>(optional)</span><input name="organisation" autocomplete="organization"></label>
+            <label>What do you need?<select name="need" required><option value="" disabled selected>Select a focus</option><option>Build a new product</option><option>Improve an existing application</option><option>Connect software and platforms</option><option>Plan a project</option><option>Something else</option></select></label>
+            <label class="software-message-field">A little more about the project<textarea name="message" rows="4" required></textarea></label>
+          </div>
+          <button class="software-submit" type="submit">Prepare your enquiry <span aria-hidden="true">&#8599;</span></button>
+          <p class="software-form-note" id="softwareFormNote" aria-live="polite">Your email app will open with your enquiry ready to send.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <th:block th:replace="~{fragments/site-footer :: siteFooter}"></th:block>
+  <script th:src="@{/js/navigation.js}" src="/js/navigation.js" defer></script>
+</body>
+</html>

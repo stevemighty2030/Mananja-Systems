@@ -46,7 +46,7 @@
           <div class="services-capability-top"><span th:text="${service.number}">01</span><span aria-hidden="true">&#8599;</span></div>
           <h3 th:text="${service.title}">API Integrations</h3>
           <p th:text="${service.description}">Connect the platforms your organisation depends on.</p>
-          <a th:href="${service.link}" th:text="${service.link == '/services/api-integrations' ? 'Explore API integrations' : 'Discuss this service'}">Explore this service</a>
+          <a th:href="${service.link}" th:text="${service.link == '/services/api-integrations' ? 'Explore API integrations' : (service.link == '/solutions/software-platforms' ? 'Explore software and platforms' : 'Discuss this service')}">Explore this service</a>
         </article>
       </div>
     </section>

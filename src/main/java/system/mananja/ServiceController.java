@@ -24,7 +24,8 @@ public class ServiceController {
                 new ServiceOffering("02", "Cloud & infrastructure",
                         "Build secure, scalable foundations that give your teams room to do their best work."),
                 new ServiceOffering("03", "Software & platforms",
-                        "Design and deliver the digital products your customers and people actually need."),
+                        "Design and deliver the digital products your customers and people actually need.",
+                        "/solutions/software-platforms"),
                 new ServiceOffering("04", "Enterprise Agentic AI",
                         "Make your data useful, accessible, and ready to support smarter decisions."));
     }

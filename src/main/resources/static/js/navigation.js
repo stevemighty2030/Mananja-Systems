@@ -137,7 +137,7 @@ function setTechnology(menu, choice) {
   populateLinks('[data-technology-resources]', profile.resources);
 }
 
-document.querySelectorAll('.technologies-menu, .company-menu').forEach((menu) => {
+document.querySelectorAll('.technologies-menu, .solutions-menu, .company-menu').forEach((menu) => {
   const closeMenu = () => {
     menu.removeAttribute('open');
     if (menu.contains(document.activeElement)) document.activeElement.blur();
@@ -147,7 +147,7 @@ document.querySelectorAll('.technologies-menu, .company-menu').forEach((menu) =>
     if (event.pointerType === 'mouse') menu.setAttribute('open', '');
   });
   menu.addEventListener('pointerleave', (event) => {
-    if (event.pointerType === 'mouse') closeMenu();
+    if (event.pointerType === 'mouse' && !menu.contains(event.relatedTarget)) closeMenu();
   });
   menu.addEventListener('focusout', (event) => {
     if (!menu.contains(event.relatedTarget)) closeMenu();
@@ -160,4 +160,21 @@ document.querySelectorAll('.technologies-menu, .company-menu').forEach((menu) =>
     choice.addEventListener('pointerenter', () => setTechnology(menu, choice));
     choice.addEventListener('focus', () => setTechnology(menu, choice));
   });
+});
+
+const softwareContactForm = document.querySelector('#softwareContactForm');
+softwareContactForm?.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const formData = new FormData(softwareContactForm);
+  const subject = 'Software and platforms project enquiry';
+  const message = [
+    `Name: ${formData.get('name')}`,
+    `Email: ${formData.get('email')}`,
+    `Organisation: ${formData.get('organisation') || 'Not provided'}`,
+    `Project focus: ${formData.get('need')}`,
+    '',
+    'Project details:',
+    formData.get('message')
+  ].join('\n');
+  window.location.href = `mailto:hello@mananja.system?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
 });

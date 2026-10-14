@@ -40,7 +40,7 @@
   top: 82px;
   left: 50%;
   display: none;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 16px;
   width: min(94vw, 1500px);
   max-height: calc(100vh - 100px);
@@ -116,13 +116,14 @@
 
 @media (max-width: 1000px) and (min-width: 681px) {
   .solutions-dropdown {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
     width: 96vw;
     padding: 20px;
   }
 
   .solutions-menu-card {
-    min-height: 250px;
+    min-height: 220px;
     padding: 24px 18px;
   }
 

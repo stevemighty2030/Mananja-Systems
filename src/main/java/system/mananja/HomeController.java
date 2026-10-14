@@ -184,6 +184,12 @@ public class HomeController {
         return "services";
     }
 
+    @GetMapping("/solutions/software-platforms")
+    public String softwarePlatforms(Model model) {
+        model.addAttribute("currentYear", Year.now().getValue());
+        return "software-platforms";
+    }
+
     @GetMapping("/technologies")
     public String technologies(Model model) {
         model.addAttribute("technologies", TECHNOLOGIES.entrySet().stream()
