@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171b27">
+  <meta name="description" content="Explore Mananja Systems integration, API, DevOps, banking, messaging, and observability technologies.">
+  <title>Technologies | Mananja Systems</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" th:href="@{/css/site.css}" href="/css/site.css">
+  <link rel="stylesheet" th:href="@{/css/technologies-page.css}" href="/css/technologies-page.css">
+</head>
+<body id="top">
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Mananja Systems home"><img src="/mananja-mark.svg" alt=""><span class="brand-name">Mananja Systems</span></a>
+    <details class="mobile-menu">
+      <summary aria-label="Open navigation"><span></span><span></span></summary>
+      <nav aria-label="Mobile navigation"><a href="/">Home</a><th:block th:replace="~{fragments/technologies-menu :: mobile}"></th:block><a href="/company">Company</a><a href="/#contact">Contact</a></nav>
+    </details>
+    <nav class="desktop-nav" aria-label="Main navigation"><a href="/">Home</a><th:block th:replace="~{fragments/technologies-menu :: desktop}"></th:block><a href="/company">Company</a><a class="nav-contact" href="/#contact">Contact <span aria-hidden="true">&#8599;</span></a></nav>
+  </header>
+  <main>
+    <section class="technologies-hero"><div class="wrap"><div class="eyebrow"><span></span> Mananja Systems / Technology</div><h1>Technologies</h1><p class="technologies-hero-lead">Choosing the right integration technology can be critical to your outcomes.</p><p>We are integration specialists working with a range of technologies across Integration, API Management, DevOps, Identity Management, banking platforms, and observability. Explore the platforms we support and how we can help your team make them work together.</p></div></section>
+    <section class="technologies-questions"><div class="wrap technologies-questions-layout"><div><span class="eyebrow muted">Choose with confidence</span><h2>Questions to ask when selecting a technology</h2><p>Start with the outcomes your organisation needs. The right platform should fit your architecture, skills, operating model, and long-term plans.</p></div><div class="technologies-question-list"><article><span>01</span><p>Will this technology deliver the outcomes we need and fit our enterprise architecture?</p></article><article><span>02</span><p>Can our team access the skills needed to implement and support it over time?</p></article><article><span>03</span><p>Does the platform have a clear roadmap and the stability for a long-term investment?</p></article><article><span>04</span><p>What is the full cost of ownership, including people, support, licensing, and infrastructure?</p></article></div></div></section>
+    <section class="wrap technologies-directory" aria-label="Technology directory">
+      <div class="technologies-directory-heading"><div><span class="eyebrow muted">Our technology partnerships</span><h2>Platforms we work with</h2><p>We bring implementation experience and practical support to the technologies your organisation depends on.</p></div><p th:text="|${#lists.size(technologies)} technologies|">17 technologies</p></div>
+      <div class="technologies-card-grid">
+        <article class="technologies-card" th:each="entry : ${technologies}">
+          <div class="technologies-card-top"><span class="technologies-card-mark"><img th:src="${technologyLogos[entry.key]}" th:alt="|${entry.value.name} logo|" loading="lazy"></span><span class="technologies-card-category" th:text="${entry.value.tagline}">Integration and APIs</span></div>
+          <h3 th:text="${entry.value.name}">WSO2</h3>
+          <p th:text="${entry.value.description}">Plan, build, and support technology around your organisation.</p>
+          <div class="technologies-card-capabilities"><span th:each="capability : ${entry.value.capabilities}" th:text="${capability}">API Manager</span></div>
+          <a class="technologies-card-link" th:href="@{/technologies/{slug}/(slug=${entry.key})}">Explore <span aria-hidden="true">&#8594;</span></a>
+        </article>
+      </div>
+    </section>
+    <section class="technologies-contact"><div class="wrap"><div><span class="eyebrow light">Need help choosing?</span><h2>Find the right fit<br><em>for your systems.</em></h2></div><div><p>Tell us about your platforms, goals, or integration challenges. We can help you shape a practical next step.</p><a class="button button-primary" href="/#contact">Talk to our team <span aria-hidden="true">&#8594;</span></a></div></div></section>
+  </main>
+  <footer class="footer wrap"><a class="brand" href="/" aria-label="Mananja Systems home"><img src="/mananja-logo-transparent.png" alt="Mananja Systems"></a><span>Better technology. Better together.</span><small>&copy; <span th:text="${currentYear}">2026</span> Mananja Systems</small><a class="back-top" href="#top" aria-label="Back to top">&#8593;</a></footer>
+  <script th:src="@{/js/navigation.js}" src="/js/navigation.js" defer></script>
+</body>
+</html>

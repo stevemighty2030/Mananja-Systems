@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171b27">
+  <meta name="description" content="Mananja Systems Apache ActiveMQ consulting for broker architecture, reliable messaging, integration, migration, and operations.">
+  <title>Apache ActiveMQ Messaging Services | Mananja Systems</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" th:href="@{/css/site.css}" href="/css/site.css">
+  <link rel="stylesheet" th:href="@{/css/technology-detail.css}" href="/css/technology-detail.css">
+  <link rel="stylesheet" th:href="@{/css/technology-activemq.css}" href="/css/technology-activemq.css">
+</head>
+<body id="top">
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Mananja Systems home"><img src="/mananja-mark.svg" alt=""><span class="brand-name">Mananja Systems</span></a>
+    <details class="mobile-menu"><summary aria-label="Open navigation"><span></span><span></span></summary><nav aria-label="Mobile navigation"><a href="/">Home</a><th:block th:replace="~{fragments/technologies-menu :: mobile}"></th:block><a href="/#contact">Contact</a></nav></details>
+    <nav class="desktop-nav" aria-label="Main navigation"><a href="/">Home</a><th:block th:replace="~{fragments/technologies-menu :: desktop}"></th:block><a href="/company">Company</a><a class="nav-contact" href="/#contact">Contact <span aria-hidden="true">&#8599;</span></a></nav>
+  </header>
+  <main>
+    <div class="technology-breadcrumb wrap"><a href="/">Home</a><span>/</span><a href="/technologies">Technologies</a><span>/</span><span>Apache ActiveMQ</span></div>
+    <section class="technology-hero activemq-hero">
+      <div class="wrap technology-hero-grid">
+        <div class="technology-hero-copy">
+          <div class="eyebrow"><span></span> Mananja Systems / Apache ActiveMQ consulting</div>
+          <h1>Apache ActiveMQ<br><em>Reliable messaging for connected systems.</em></h1>
+          <p>Design messaging that keeps applications communicating through changing demand and temporary service interruptions. We help teams shape broker architecture, connect producers and consumers, and establish the operational practices behind dependable message flows.</p>
+          <div class="technology-hero-actions"><a class="button button-primary" href="/#contact">Talk to our team <span aria-hidden="true">&#8594;</span></a><a class="technology-quiet-link" href="#activemq-capabilities">Explore ActiveMQ capabilities <span aria-hidden="true">&#8595;</span></a></div>
+        </div>
+        <div class="technology-hero-art" aria-label="Apache ActiveMQ logo and related capabilities">
+          <div class="tech-orbit tech-orbit-one"></div><div class="tech-orbit tech-orbit-two"></div>
+          <div class="tech-core"><img th:src="${technologyLogo}" alt="Apache ActiveMQ logo"><strong>MANANJA<br>SYSTEMS</strong></div>
+          <span class="tech-node tech-node-one">Queues</span><span class="tech-node tech-node-two">Topics</span><span class="tech-node tech-node-three">Protocols</span><span class="tech-node tech-node-four">Resilience</span>
+          <i class="tech-connector connector-one"></i><i class="tech-connector connector-two"></i><i class="tech-connector connector-three"></i><i class="tech-connector connector-four"></i>
+        </div>
+      </div>
+    </section>
+
+    <section class="activemq-overview wrap">
+      <div><span class="eyebrow muted">Messaging platform expertise</span><h2>Connect services<br><em>through clear message flows.</em></h2></div>
+      <div><p>Apache ActiveMQ provides broker-based messaging for applications that need to exchange work without depending on both sides being available at the same time. Queues, topics, protocols, persistence, and delivery behaviour should be selected around the real requirements of each flow.</p><p>We help map those requirements, plan the broker and client design, and make ownership, monitoring, recovery, and change part of the implementation from the beginning.</p></div>
+    </section>
+
+    <section class="activemq-products" id="activemq-capabilities">
+      <div class="wrap">
+        <div class="activemq-section-heading"><div><span class="eyebrow muted">Core capabilities</span><h2>Build a messaging foundation</h2></div><p>Shape broker patterns around delivery guarantees, client needs, throughput, and the systems already in your environment.</p></div>
+        <div class="activemq-product-grid">
+          <article><span>01 / BROKER ARCHITECTURE</span><h3>ActiveMQ Classic and Artemis</h3><p>Assess the broker edition and deployment approach that fits the use case. We help map existing clients and integrations, plan topology and environments, and define a migration path when change is needed.</p><a href="/#contact">Plan your broker architecture <b aria-hidden="true">&#8594;</b></a></article>
+          <article><span>02 / MESSAGE PATTERNS</span><h3>Queues, topics, and routing</h3><p>Design point-to-point and publish-subscribe flows with clear destinations, message contracts, routing, and ownership. Match the pattern to how producers and consumers need to work.</p><a href="/#contact">Design message flows <b aria-hidden="true">&#8594;</b></a></article>
+          <article><span>03 / CLIENT CONNECTIVITY</span><h3>Protocols and application integration</h3><p>Connect applications through appropriate client libraries and messaging protocols. Plan compatibility, authentication, connection behaviour, and how message handling fits the application lifecycle.</p><a href="/#contact">Connect your applications <b aria-hidden="true">&#8594;</b></a></article>
+          <article><span>04 / DELIVERY AND OPERATIONS</span><h3>Persistence, recovery, and visibility</h3><p>Plan message durability, acknowledgements, retries, dead-letter handling, broker recovery, monitoring, and runbooks to support the delivery and service-level needs of each workflow.</p><a href="/#contact">Improve messaging operations <b aria-hidden="true">&#8594;</b></a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="activemq-help">
+      <div class="wrap activemq-help-layout">
+        <div><span class="eyebrow light">How we help with ActiveMQ</span><h2>From first message<br>to <em>production confidence.</em></h2><p>We work across the messaging lifecycle, whether you are introducing a broker, improving existing integrations, or preparing a platform change.</p><a class="button button-primary" href="/#contact">Discuss your messaging needs <span aria-hidden="true">&#8594;</span></a></div>
+        <div class="activemq-help-list">
+          <article><span>01</span><div><h3>Discovery and design</h3><p>Map systems, message volumes, delivery needs, dependencies, and operational constraints.</p></div></article>
+          <article><span>02</span><div><h3>Implementation and integration</h3><p>Configure broker environments and connect applications with documented message contracts.</p></div></article>
+          <article><span>03</span><div><h3>Migration and modernisation</h3><p>Plan broker or client changes in stages, including compatibility, validation, and cutover.</p></div></article>
+          <article><span>04</span><div><h3>Monitoring and support</h3><p>Establish health indicators, alerting, capacity reviews, recovery procedures, and team handover.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="activemq-planning wrap">
+      <div class="activemq-section-heading"><div><span class="eyebrow muted">Before implementation</span><h2>Make delivery behaviour<br><em>an explicit design choice.</em></h2></div><p>Messaging reliability comes from agreeing how the whole flow behaves, including client code and operational response.</p></div>
+      <div class="activemq-planning-grid"><article th:each="item, stat : ${technologyDetail.considerations}"><span th:text="|0${stat.count}|">01</span><p th:text="${item}">Plan the implementation around your organisation's requirements.</p></article></div>
+    </section>
+
+    <section class="activemq-next-step"><div class="wrap"><div><span class="eyebrow light">Your ActiveMQ next step</span><h2>Keep important messages<br><em>moving between systems.</em></h2><p>Tell us where your integrations are slowing down or becoming difficult to operate. We will help define a practical next step for your ActiveMQ environment.</p><a class="button button-primary" href="/#contact">Contact Mananja Systems <span aria-hidden="true">&#8599;</span></a></div><div class="activemq-next-mark"><img th:src="${technologyLogo}" alt="Apache ActiveMQ logo"><span>APACHE ACTIVEMQ<br>WITH MANANJA SYSTEMS</span></div></div></section>
+  </main>
+  <footer class="footer wrap"><a class="brand" href="/" aria-label="Mananja Systems home"><img src="/mananja-logo-transparent.png" alt="Mananja Systems"></a><span>Better technology. Better together.</span><small>&copy; <span th:text="${currentYear}">2026</span> Mananja Systems</small><a class="back-top" href="#top" aria-label="Back to top">&#8593;</a></footer>
+  <script th:src="@{/js/navigation.js}" src="/js/navigation.js" defer></script>
+</body>
+</html>

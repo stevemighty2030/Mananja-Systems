@@ -1,0 +1,41 @@
+.wso2-hero .technology-hero h1{max-width:680px}
+.wso2-hero .technology-hero h1 em{font-size:.66em;line-height:1.2}
+.wso2-overview{display:grid;grid-template-columns:1fr 1fr;gap:10%;align-items:start;padding-top:78px;padding-bottom:80px}
+.wso2-overview h2,.wso2-section-heading h2,.wso2-help h2,.wso2-next-step h2{margin:14px 0 0;color:#171b27;font-family:Montserrat,Inter,sans-serif;font-size:clamp(34px,4.3vw,55px);line-height:1.08;letter-spacing:-2px}
+.wso2-overview h2 em,.wso2-help h2 em,.wso2-next-step h2 em{color:#df3d35;font-style:normal}
+.wso2-overview>div:last-child p{margin:0 0 14px;color:#646a75;font-size:13px;line-height:1.9}
+.wso2-products{padding:78px 0 86px;background:#f5f4f2}
+.wso2-section-heading{display:grid;grid-template-columns:1fr .65fr;gap:9%;align-items:end;margin-bottom:31px}
+.wso2-section-heading h2{font-size:clamp(31px,3.6vw,44px)}
+.wso2-section-heading>p{margin:0;color:#646a75;font-size:12px;line-height:1.8}
+.wso2-product-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.wso2-product-grid article{min-height:270px;display:flex;flex-direction:column;padding:25px;border:1px solid #e6e4e1;border-radius:6px;background:#fff}
+.wso2-product-grid article>span{color:#df3d35;font-size:9px;font-weight:700;letter-spacing:1px}
+.wso2-product-grid h3{margin:21px 0 8px;color:#171b27;font-family:Montserrat,Inter,sans-serif;font-size:20px}
+.wso2-product-grid p{margin:0 0 18px;color:#646a75;font-size:12px;line-height:1.8}
+.wso2-product-grid a{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-top:auto;padding-top:12px;border-top:1px solid #eeedeb;color:#c9342d;font-size:11px;font-weight:700}
+.wso2-product-grid a b{font-size:16px;font-weight:400}
+.wso2-help{padding:82px 0;background:linear-gradient(130deg,#171b27,#252936);color:#fff}
+.wso2-help-layout{display:grid;grid-template-columns:.78fr 1fr;gap:13%;align-items:center}
+.wso2-help h2{margin-bottom:17px;color:#fff}
+.wso2-help-layout>div:first-child>p{max-width:430px;margin:0 0 22px;color:#c4c7cf;font-size:12px;line-height:1.85}
+.wso2-help .button-primary,.wso2-next-step .button-primary{background:#df3d35}
+.wso2-help-list article{display:grid;grid-template-columns:40px 1fr;gap:12px;padding:17px 0;border-bottom:1px solid #ffffff35}
+.wso2-help-list article:first-child{border-top:1px solid #ffffff35}
+.wso2-help-list article>span{padding-top:2px;color:#f16c60;font-size:10px;font-weight:700}
+.wso2-help-list h3{margin:0 0 5px;color:#fff;font-family:Montserrat,Inter,sans-serif;font-size:13px}
+.wso2-help-list p{margin:0;color:#c4c7cf;font-size:11px;line-height:1.7}
+.wso2-planning{padding-top:82px;padding-bottom:90px}
+.wso2-planning-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid #e4e4e5;border-left:1px solid #e4e4e5}
+.wso2-planning-grid article{min-height:120px;display:grid;grid-template-columns:40px 1fr;gap:13px;padding:19px 20px;border-right:1px solid #e4e4e5;border-bottom:1px solid #e4e4e5}
+.wso2-planning-grid article>span{color:#df3d35;font-size:10px;font-weight:700}
+.wso2-planning-grid p{margin:0;color:#474c55;font-size:12px;line-height:1.8}
+.wso2-next-step{padding:73px 0;background:#f5f4f2}
+.wso2-next-step>.wrap{display:flex;align-items:center;justify-content:space-between;gap:30px}
+.wso2-next-step h2{margin:13px 0;color:#171b27}
+.wso2-next-step p{max-width:520px;margin:16px 0 20px;color:#646a75;font-size:12px;line-height:1.8}
+.wso2-next-mark{width:160px;height:160px;flex:0 0 160px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;border-radius:50%;background:#fff;box-shadow:0 15px 45px #171b2712}
+.wso2-next-mark img{width:65px;height:65px;object-fit:contain}
+.wso2-next-mark span{color:#565c66;font-size:8px;font-weight:700;line-height:1.5;letter-spacing:1px;text-align:center}
+@media(max-width:760px){.wso2-overview{grid-template-columns:1fr;gap:20px;padding-top:57px;padding-bottom:60px}.wso2-section-heading{grid-template-columns:1fr;gap:12px}.wso2-help-layout{grid-template-columns:1fr;gap:31px}.wso2-next-step>.wrap{align-items:flex-start}}
+@media(max-width:600px){.wso2-hero .technology-hero h1 em{font-size:.72em}.wso2-products,.wso2-help{padding:58px 0}.wso2-product-grid,.wso2-planning-grid{grid-template-columns:1fr}.wso2-product-grid article{min-height:0;padding:20px}.wso2-help h2,.wso2-overview h2,.wso2-next-step h2{font-size:39px}.wso2-planning{padding-top:59px;padding-bottom:65px}.wso2-planning-grid{border-left:0}.wso2-planning-grid article{min-height:0;padding:16px 4px;border-right:0}.wso2-next-step{padding:57px 0}.wso2-next-step>.wrap{flex-direction:column}.wso2-next-mark{width:112px;height:112px;flex-basis:112px;align-self:center}.wso2-next-mark img{width:48px;height:48px}}

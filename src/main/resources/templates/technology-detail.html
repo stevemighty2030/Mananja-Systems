@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171b27">
+  <meta name="description" th:content="|Mananja Systems technology services for ${technology.name}: ${technology.tagline}.|" content="Mananja Systems technology services and integration expertise.">
+  <title th:text="|${technology.name} services | Mananja Systems|">Technology services | Mananja Systems</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" th:href="@{/css/site.css}" href="/css/site.css">
+  <link rel="stylesheet" th:href="@{/css/technology-detail.css}" href="/css/technology-detail.css">
+</head>
+<body id="top">
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Mananja Systems home"><img src="/mananja-mark.svg" alt=""><span class="brand-name">Mananja Systems</span></a>
+    <details class="mobile-menu">
+      <summary aria-label="Open navigation"><span></span><span></span></summary>
+      <nav aria-label="Mobile navigation"><a href="/">Home</a><th:block th:replace="~{fragments/technologies-menu :: mobile}"></th:block><a href="/#contact">Contact</a></nav>
+    </details>
+    <nav class="desktop-nav" aria-label="Main navigation"><a href="/">Home</a><th:block th:replace="~{fragments/technologies-menu :: desktop}"></th:block><a href="/company">Company</a><a class="nav-contact" href="/#contact">Contact <span aria-hidden="true">&#8599;</span></a></nav>
+  </header>
+
+  <main>
+    <div class="technology-breadcrumb wrap"><a href="/">Home</a><span>/</span><a href="/technologies">Technologies</a><span>/</span><span th:text="${technology.name}">WSO2</span></div>
+    <section class="technology-hero">
+      <div class="wrap technology-hero-grid">
+        <div class="technology-hero-copy">
+          <div class="eyebrow"><span></span> Mananja Systems technology services</div>
+          <h1><span th:text="${technology.name}">WSO2</span><br><em th:text="${technology.tagline}">Integration, API and identity management</em></h1>
+          <p th:text="${technology.description}">Connect your platforms and services through practical system integration.</p>
+          <div class="technology-hero-actions"><a class="button button-primary" href="/#contact">Talk to our team <span aria-hidden="true">&#8594;</span></a><a class="technology-quiet-link" href="#expertise">Explore our expertise <span aria-hidden="true">&#8595;</span></a></div>
+        </div>
+        <div class="technology-hero-art" aria-hidden="true">
+          <div class="tech-orbit tech-orbit-one"></div><div class="tech-orbit tech-orbit-two"></div>
+          <div class="tech-core"><img th:src="${technologyLogo}" th:alt="|${technology.name} logo|"><strong>MANANJA<br>SYSTEMS</strong></div>
+          <span class="tech-node tech-node-one">APIs</span><span class="tech-node tech-node-two">Integration</span><span class="tech-node tech-node-three">Cloud</span><span class="tech-node tech-node-four">Identity</span>
+          <i class="tech-connector connector-one"></i><i class="tech-connector connector-two"></i><i class="tech-connector connector-three"></i><i class="tech-connector connector-four"></i>
+        </div>
+      </div>
+    </section>
+
+    <section class="technology-expertise wrap" id="expertise">
+      <div class="technology-section-heading"><div><span class="eyebrow muted" th:text="|How we help with ${technology.name}|">How we help with this technology</span><h2>Make your technology<br><em>work as one.</em></h2></div><p th:text="${technologyDetail.approach}">Mananja Systems helps teams plan, implement, and support technology in ways that fit their architecture and operating needs.</p></div>
+      <div class="technology-capability-grid">
+        <article class="technology-capability-card" th:each="capability, stat : ${technologyCapabilities}"><span th:text="|0${stat.count}|">01</span><h3 th:text="${capability.name}">API Manager</h3><p th:text="${capability.description}">Plan this capability around your architecture and team needs.</p></article>
+      </div>
+    </section>
+
+    <section class="technology-use-cases">
+      <div class="wrap">
+        <div class="technology-use-cases-heading"><span class="eyebrow muted">Technology in practice</span><h2 th:text="|Where ${technology.name} can help.|">Where this technology can help.</h2><p th:text="${technology.description}">Explore common ways this technology can support your systems and teams.</p></div>
+        <div class="technology-use-case-grid"><article th:each="useCase, stat : ${technologyUseCases}"><span th:text="|0${stat.count}|">01</span><p th:text="${useCase}">Connect systems with a planned, supportable implementation.</p></article></div>
+      </div>
+    </section>
+
+    <section class="technology-considerations">
+      <div class="wrap">
+        <div class="technology-considerations-heading"><span class="eyebrow muted">Before implementation</span><h2>Plan for the details<br><em>that matter.</em></h2><p>Good outcomes depend on the surrounding architecture, people, and operating model as much as the platform itself. These are useful areas to work through with your team.</p></div>
+        <div class="technology-consideration-list"><article th:each="item, stat : ${technologyDetail.considerations}"><span th:text="|0${stat.count}|">01</span><p th:text="${item}">Plan the implementation around your organisation's needs.</p></article></div>
+      </div>
+    </section>
+
+    <section class="technology-services">
+      <div class="wrap technology-services-layout"><div><span class="eyebrow light" th:text="|${technology.name} services|">Technology services</span><h2>From first plan<br>to <em>steady operations.</em></h2><p th:if="${technology.name == 'WSO2'}">Get support across WSO2 architecture, product selection, implementation, integration development, upgrades, and ongoing operations. We can work with your team on a defined delivery or help build the practices needed to manage the platform over time.</p><p th:unless="${technology.name == 'WSO2'}">Work with Mananja Systems at the stage that matters to your organisation. We can support a defined project or stay alongside your team as needs evolve.</p><a class="button button-primary" href="/#contact">Discuss your requirements <span aria-hidden="true">&#8594;</span></a></div>
+        <div class="technology-service-list"><article th:each="service, stat : ${technology.services}"><span th:text="|0${stat.count}|">01</span><h3 th:text="${service}">Implementation</h3><b aria-hidden="true">&#8599;</b></article></div>
+      </div>
+    </section>
+
+    <section class="technology-next-step wrap">
+      <div><span class="eyebrow muted">A connected technology foundation</span><h2>Let us make your systems<br><em>work better together.</em></h2></div>
+      <div><p>Tell us what you are building, improving, or integrating. We will help you define a practical next step for your technology landscape.</p><a class="button button-primary" href="mailto:hello@mananja.system?subject=Technology%20services%20enquiry">Contact Mananja Systems <span aria-hidden="true">&#8599;</span></a><a class="technology-inline-link" th:if="${technology.name == 'WSO2'}" href="/services/api-integrations">Explore WSO2 API Manager implementation <span aria-hidden="true">&#8594;</span></a></div>
+    </section>
+  </main>
+  <footer class="footer wrap"><a class="brand" href="/" aria-label="Mananja Systems home"><img src="/mananja-logo-transparent.png" alt="Mananja Systems"></a><span>Better technology. Better together.</span><small>&copy; <span th:text="${currentYear}">2026</span> Mananja Systems</small><a class="back-top" href="#top" aria-label="Back to top">&#8593;</a></footer>
+  <script th:src="@{/js/navigation.js}" src="/js/navigation.js" defer></script>
+</body>
+</html>

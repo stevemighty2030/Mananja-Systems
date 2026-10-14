@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171b27">
+  <meta name="description" content="Mananja Systems Red Hat consulting for application platforms, hybrid cloud, automation, and operations.">
+  <title>Red Hat Platform and Automation Services | Mananja Systems</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" th:href="@{/css/site.css}" href="/css/site.css">
+  <link rel="stylesheet" th:href="@{/css/technology-detail.css}" href="/css/technology-detail.css">
+  <link rel="stylesheet" th:href="@{/css/technology-red-hat.css}" href="/css/technology-red-hat.css">
+</head>
+<body id="top">
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Mananja Systems home"><img src="/mananja-mark.svg" alt=""><span class="brand-name">Mananja Systems</span></a>
+    <details class="mobile-menu"><summary aria-label="Open navigation"><span></span><span></span></summary><nav aria-label="Mobile navigation"><a href="/">Home</a><th:block th:replace="~{fragments/technologies-menu :: mobile}"></th:block><a href="/#contact">Contact</a></nav></details>
+    <nav class="desktop-nav" aria-label="Main navigation"><a href="/">Home</a><th:block th:replace="~{fragments/technologies-menu :: desktop}"></th:block><a href="/company">Company</a><a class="nav-contact" href="/#contact">Contact <span aria-hidden="true">&#8599;</span></a></nav>
+  </header>
+  <main>
+    <div class="technology-breadcrumb wrap"><a href="/">Home</a><span>/</span><a href="/technologies">Technologies</a><span>/</span><span>Red Hat</span></div>
+    <section class="technology-hero redhat-hero">
+      <div class="wrap technology-hero-grid">
+        <div class="technology-hero-copy">
+          <div class="eyebrow"><span></span> Mananja Systems / Red Hat consulting</div>
+          <h1>Red Hat<br><em>Platforms, automation and hybrid cloud.</em></h1>
+          <p>Plan, build, and operate Red Hat environments around your applications and teams. We help connect platform architecture, automation, integration, and day-to-day operations so the foundation fits your organisation.</p>
+          <div class="technology-hero-actions"><a class="button button-primary" href="/#contact">Talk to our team <span aria-hidden="true">&#8594;</span></a><a class="technology-quiet-link" href="#redhat-capabilities">Explore Red Hat capabilities <span aria-hidden="true">&#8595;</span></a></div>
+        </div>
+        <div class="technology-hero-art" aria-label="Red Hat logo and related capabilities">
+          <div class="tech-orbit tech-orbit-one"></div><div class="tech-orbit tech-orbit-two"></div>
+          <div class="tech-core"><img th:src="${technologyLogo}" alt="Red Hat logo"><strong>MANANJA<br>SYSTEMS</strong></div>
+          <span class="tech-node tech-node-one">OpenShift</span><span class="tech-node tech-node-two">Linux</span><span class="tech-node tech-node-three">Automation</span><span class="tech-node tech-node-four">Hybrid cloud</span>
+          <i class="tech-connector connector-one"></i><i class="tech-connector connector-two"></i><i class="tech-connector connector-three"></i><i class="tech-connector connector-four"></i>
+        </div>
+      </div>
+    </section>
+
+    <section class="redhat-overview wrap">
+      <div><span class="eyebrow muted">Red Hat platform expertise</span><h2>Build a platform foundation<br><em>that fits your workloads.</em></h2></div>
+      <div><p>Red Hat technologies can support application platforms, Linux environments, automation, and hybrid cloud operations. The right design depends on where workloads run, how teams deploy changes, and who owns the platform in production.</p><p>We work with your team to assess the current environment, clarify requirements, and plan an achievable path for implementation, modernisation, or ongoing improvement.</p></div>
+    </section>
+
+    <section class="redhat-products" id="redhat-capabilities">
+      <div class="wrap">
+        <div class="redhat-section-heading"><div><span class="eyebrow muted">Core capabilities</span><h2>Explore Red Hat capabilities</h2></div><p>Choose the platform components that support your workloads, security needs, delivery practices, and operating model.</p></div>
+        <div class="redhat-product-grid">
+          <article><span>01 / APPLICATION PLATFORM</span><h3>Red Hat OpenShift</h3><p>Plan a container platform for building, deploying, and managing applications. Work through cluster architecture, workload onboarding, access, networking, observability, and the operating responsibilities required for production.</p><a href="/#contact">Discuss your platform needs <b aria-hidden="true">&#8594;</b></a></article>
+          <article><span>02 / LINUX AND INFRASTRUCTURE</span><h3>Red Hat Enterprise Linux</h3><p>Design and support Linux environments for application and infrastructure workloads. Align configuration, patching, access controls, lifecycle planning, and operational standards with your environment.</p><a href="/#contact">Plan Linux operations <b aria-hidden="true">&#8594;</b></a></article>
+          <article><span>03 / AUTOMATION</span><h3>Ansible and repeatable operations</h3><p>Reduce repetitive platform tasks with versioned automation for configuration, provisioning, and operational workflows. Define ownership, review, execution controls, and safe promotion across environments.</p><a href="/#contact">Discuss automation <b aria-hidden="true">&#8594;</b></a></article>
+          <article><span>04 / INTEGRATION AND APPLICATION SERVICES</span><h3>Application foundations</h3><p>Connect application runtimes and integration needs with the wider platform. Plan service interfaces, messaging, deployment patterns, and the operational visibility needed to support connected workloads.</p><a href="/#contact">Explore application integration <b aria-hidden="true">&#8594;</b></a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="redhat-help">
+      <div class="wrap redhat-help-layout">
+        <div><span class="eyebrow light">How we help with Red Hat</span><h2>From platform plan<br>to <em>steady operations.</em></h2><p>We support the Red Hat lifecycle, from assessing requirements and designing the environment through implementation, adoption, and ongoing improvement.</p><a class="button button-primary" href="/#contact">Discuss your Red Hat plans <span aria-hidden="true">&#8594;</span></a></div>
+        <div class="redhat-help-list">
+          <article><span>01</span><div><h3>Architecture and planning</h3><p>Assess workloads, dependencies, security, availability, and hosting requirements to shape a practical target design.</p></div></article>
+          <article><span>02</span><div><h3>Platform implementation</h3><p>Configure environments, establish baseline practices, and help onboard applications and connected services.</p></div></article>
+          <article><span>03</span><div><h3>Automation and delivery</h3><p>Build repeatable workflows for configuration and releases, with review and controls that fit your teams.</p></div></article>
+          <article><span>04</span><div><h3>Operations and improvement</h3><p>Define monitoring, patching, upgrades, incident response, and knowledge transfer for sustainable ownership.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="redhat-planning wrap">
+      <div class="redhat-section-heading"><div><span class="eyebrow muted">Before implementation</span><h2>Plan the platform<br><em>for the long term.</em></h2></div><p>Good outcomes depend on the applications, infrastructure, people, and operating practices around the platform.</p></div>
+      <div class="redhat-planning-grid"><article th:each="item, stat : ${technologyDetail.considerations}"><span th:text="|0${stat.count}|">01</span><p th:text="${item}">Plan the implementation around your organisation's requirements.</p></article></div>
+    </section>
+
+    <section class="redhat-next-step"><div class="wrap"><div><span class="eyebrow light">Your Red Hat next step</span><h2>Make your platform<br><em>work for your teams.</em></h2><p>Tell us what you are building, improving, or operating. We will help you define a practical next step for your Red Hat environment.</p><a class="button button-primary" href="/#contact">Contact Mananja Systems <span aria-hidden="true">&#8599;</span></a></div><div class="redhat-next-mark"><img th:src="${technologyLogo}" alt="Red Hat logo"><span>RED HAT<br>WITH MANANJA SYSTEMS</span></div></div></section>
+  </main>
+  <footer class="footer wrap"><a class="brand" href="/" aria-label="Mananja Systems home"><img src="/mananja-logo-transparent.png" alt="Mananja Systems"></a><span>Better technology. Better together.</span><small>&copy; <span th:text="${currentYear}">2026</span> Mananja Systems</small><a class="back-top" href="#top" aria-label="Back to top">&#8593;</a></footer>
+  <script th:src="@{/js/navigation.js}" src="/js/navigation.js" defer></script>
+</body>
+</html>

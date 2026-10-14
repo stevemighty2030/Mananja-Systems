@@ -1,0 +1,37 @@
+.technologies-hero{padding:92px 0 72px;background:#f4f3f1}
+.technologies-hero .wrap{max-width:1120px}
+.technologies-hero h1{margin:18px 0 20px;color:#171b27;font-family:Montserrat,Inter,sans-serif;font-size:clamp(42px,6vw,76px);line-height:1.04;letter-spacing:-2.8px}
+.technologies-hero h1 em,.technologies-contact h2 em{color:#df3d35;font-style:normal}
+.technologies-hero p{max-width:700px;margin:0;color:#666b74;font-size:16px;line-height:1.8}
+.technologies-hero .technologies-hero-lead{margin:0 0 10px;color:#30333b;font-size:21px;font-weight:500}
+.technologies-questions{padding:68px 0;background:#f5f4f2}
+.technologies-questions-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(40px,7vw,110px);align-items:start}
+.technologies-questions h2{max-width:420px;margin:12px 0;color:#171b27;font-family:Montserrat,Inter,sans-serif;font-size:clamp(27px,3vw,38px);line-height:1.16;letter-spacing:-1px}
+.technologies-questions-layout>div:first-child>p{max-width:410px;margin:0;color:#686d76;font-size:14px;line-height:1.75}
+.technologies-question-list{border-top:1px solid #dddcd9}
+.technologies-question-list article{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start;padding:17px 0;border-bottom:1px solid #dddcd9}
+.technologies-question-list article>span{color:#df3d35;font-size:11px;font-weight:700;letter-spacing:.6px}
+.technologies-question-list article p{margin:0;color:#30333b;font-size:14px;line-height:1.6}
+.technologies-directory{padding-top:74px;padding-bottom:88px}
+.technologies-directory-heading{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:28px}
+.technologies-directory-heading h2{margin:10px 0 0;color:#171b27;font-family:Montserrat,Inter,sans-serif;font-size:32px;letter-spacing:-1px}
+.technologies-directory-heading>div>p{max-width:620px;margin:10px 0 0;color:#686d76;font-size:13px;line-height:1.65}
+.technologies-directory-heading>p{margin:0 0 3px;color:#777b83;font-size:13px}
+.technologies-card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.technologies-card{min-width:0;display:flex;flex-direction:column;padding:25px 24px 22px;border:1px solid #e8e7e5;border-radius:8px;background:#fff;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+.technologies-card:hover{transform:translateY(-3px);border-color:#e4b5b2;box-shadow:0 14px 32px #171b2710}
+.technologies-card-top{display:flex;align-items:center;gap:14px;min-height:48px}
+.technologies-card-mark{width:40px;height:40px;flex:0 0 40px;display:grid;place-items:center;border:2px solid #df242b;border-radius:50%;outline:1px solid #df242b;outline-offset:3px;background:#fff;color:white;font-size:16px}
+.technologies-card-mark img{width:25px;height:25px;object-fit:contain}
+.technologies-card-category{color:#777b83;font-size:11px;line-height:1.4}
+.technologies-card h3{margin:22px 0 8px;color:#171b27;font-family:Montserrat,Inter,sans-serif;font-size:20px;letter-spacing:-.45px}
+.technologies-card>p{margin:0 0 17px;color:#686d76;font-size:13px;line-height:1.7}
+.technologies-card-capabilities{display:flex;flex-wrap:wrap;gap:6px;margin:auto 0 18px}
+.technologies-card-capabilities span{padding:5px 8px;border-radius:3px;background:#f4f3f1;color:#515660;font-size:10px;line-height:1.25}
+.technologies-card-link{display:flex;justify-content:space-between;align-items:center;padding-top:13px;border-top:1px solid #ecebea;color:#c9342d;font-size:12px;font-weight:700}
+.technologies-contact{padding:64px 0;background:#171b27;color:#fff}
+.technologies-contact>.wrap{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:50px}
+.technologies-contact h2{margin:14px 0 0;font-family:Montserrat,Inter,sans-serif;font-size:clamp(31px,4vw,48px);line-height:1.12;letter-spacing:-1.3px}
+.technologies-contact p{max-width:500px;margin:0 0 19px;color:#c4c6cc;font-size:14px;line-height:1.75}
+@media(max-width:900px){.technologies-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:680px){.technologies-hero{padding:62px 0 50px}.technologies-hero h1{letter-spacing:-1.6px}.technologies-hero p{font-size:14px}.technologies-hero .technologies-hero-lead{font-size:18px}.technologies-questions{padding:48px 0}.technologies-questions-layout{grid-template-columns:1fr;gap:28px}.technologies-questions h2{font-size:28px}.technologies-question-list article p{font-size:13px}.technologies-directory{padding-top:50px;padding-bottom:58px}.technologies-directory-heading{align-items:start;flex-direction:column;gap:9px}.technologies-directory-heading h2{font-size:27px}.technologies-card-grid{grid-template-columns:1fr;gap:11px}.technologies-card{padding:20px}.technologies-card h3{margin-top:17px}.technologies-contact{padding:48px 0}.technologies-contact>.wrap{grid-template-columns:1fr;gap:24px}}

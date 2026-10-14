@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171b27">
+  <meta name="description" content="Mananja Systems WSO2 consulting for integration, API management, identity, implementation, and support.">
+  <title>WSO2 Integration, API and Identity Services | Mananja Systems</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" th:href="@{/css/site.css}" href="/css/site.css">
+  <link rel="stylesheet" th:href="@{/css/technology-detail.css}" href="/css/technology-detail.css">
+  <link rel="stylesheet" th:href="@{/css/technology-wso2.css}" href="/css/technology-wso2.css">
+</head>
+<body id="top">
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Mananja Systems home"><img src="/mananja-mark.svg" alt=""><span class="brand-name">Mananja Systems</span></a>
+    <details class="mobile-menu">
+      <summary aria-label="Open navigation"><span></span><span></span></summary>
+      <nav aria-label="Mobile navigation"><a href="/">Home</a><th:block th:replace="~{fragments/technologies-menu :: mobile}"></th:block><a href="/#contact">Contact</a></nav>
+    </details>
+    <nav class="desktop-nav" aria-label="Main navigation"><a href="/">Home</a><th:block th:replace="~{fragments/technologies-menu :: desktop}"></th:block><a href="/company">Company</a><a class="nav-contact" href="/#contact">Contact <span aria-hidden="true">&#8599;</span></a></nav>
+  </header>
+  <main>
+    <div class="technology-breadcrumb wrap"><a href="/">Home</a><span>/</span><a href="/technologies">Technologies</a><span>/</span><span>WSO2</span></div>
+    <section class="technology-hero wso2-hero">
+      <div class="wrap technology-hero-grid">
+        <div class="technology-hero-copy">
+          <div class="eyebrow"><span></span> Mananja Systems / WSO2 consulting</div>
+          <h1>WSO2<br><em>Integration, APIs and identity.</em></h1>
+          <p>Plan, build, and support WSO2 around the way your organisation connects applications, manages APIs, and serves its users. We help shape the architecture, delivery, and operational practices that make the platform work with your wider systems.</p>
+          <div class="technology-hero-actions"><a class="button button-primary" href="/#contact">Talk to our team <span aria-hidden="true">&#8594;</span></a><a class="technology-quiet-link" href="#wso2-products">Explore WSO2 capabilities <span aria-hidden="true">&#8595;</span></a></div>
+        </div>
+        <div class="technology-hero-art" aria-label="WSO2 logo and related capabilities">
+          <div class="tech-orbit tech-orbit-one"></div><div class="tech-orbit tech-orbit-two"></div>
+          <div class="tech-core"><img th:src="${technologyLogo}" alt="WSO2 logo"><strong>MANANJA<br>SYSTEMS</strong></div>
+          <span class="tech-node tech-node-one">API Manager</span><span class="tech-node tech-node-two">Integration</span><span class="tech-node tech-node-three">Identity</span><span class="tech-node tech-node-four">Choreo</span>
+          <i class="tech-connector connector-one"></i><i class="tech-connector connector-two"></i><i class="tech-connector connector-three"></i><i class="tech-connector connector-four"></i>
+        </div>
+      </div>
+    </section>
+
+    <section class="wso2-overview wrap">
+      <div><span class="eyebrow muted">WSO2 platform expertise</span><h2>Build an integration foundation<br><em>around your architecture.</em></h2></div>
+      <div><p>WSO2 capabilities can help connect applications, expose and govern APIs, and support identity across digital services. Mananja Systems works with your team to understand the systems and outcomes involved, then shape a practical design and delivery plan.</p><p>That can mean extending an established WSO2 environment, introducing new integration flows, planning a migration, or defining the support and delivery practices needed for ongoing change.</p></div>
+    </section>
+
+    <section class="wso2-products" id="wso2-products">
+      <div class="wrap">
+        <div class="wso2-section-heading"><div><span class="eyebrow muted">Core capabilities</span><h2>Explore the WSO2 portfolio</h2></div><p>Focus on the products and capabilities that fit your use cases, operating model, and technology roadmap.</p></div>
+        <div class="wso2-product-grid">
+          <article><span>01 / API MANAGEMENT</span><h3>API Manager</h3><p>Design and manage APIs through their lifecycle. Plan publication, access policies, security, developer experience, analytics, and governance for internal and external API consumers.</p><a href="/services/api-integrations">Explore API integration services <b aria-hidden="true">&#8594;</b></a></article>
+          <article><span>02 / INTEGRATION</span><h3>Enterprise Integrator</h3><p>Connect applications and services with integration flows, mediation, and orchestration. We help assess existing interfaces, design the target patterns, and deliver integrations that fit the surrounding architecture.</p><a href="/#contact">Discuss an integration <b aria-hidden="true">&#8594;</b></a></article>
+          <article><span>03 / IDENTITY</span><h3>Identity Server</h3><p>Plan identity and access capabilities across applications, users, and services. Work can include authentication journeys, federation, access controls, and integration with your existing identity environment.</p><a href="/#contact">Discuss identity needs <b aria-hidden="true">&#8594;</b></a></article>
+          <article><span>04 / DIGITAL PLATFORM</span><h3>Choreo</h3><p>Assess how a managed platform approach could support building, deploying, and operating digital services. We help connect platform choices with developer workflows, governance, and operational responsibilities.</p><a href="/#contact">Assess your platform options <b aria-hidden="true">&#8594;</b></a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="wso2-help">
+      <div class="wrap wso2-help-layout">
+        <div><span class="eyebrow light">How we help with WSO2</span><h2>From technology choice<br>to <em>steady operations.</em></h2><p>We work with you across the WSO2 lifecycle, whether you need a focused implementation or help building lasting integration capability.</p><a class="button button-primary" href="/#contact">Discuss your WSO2 plans <span aria-hidden="true">&#8594;</span></a></div>
+        <div class="wso2-help-list">
+          <article><span>01</span><div><h3>Strategy and architecture</h3><p>Clarify business outcomes, map integration needs, assess product fit, and define a target architecture.</p></div></article>
+          <article><span>02</span><div><h3>Implementation and development</h3><p>Configure environments, build APIs and integrations, and connect WSO2 with the systems around it.</p></div></article>
+          <article><span>03</span><div><h3>Migration and modernisation</h3><p>Plan platform changes and move workloads in stages with attention to dependencies, testing, and cutover.</p></div></article>
+          <article><span>04</span><div><h3>DevOps and ongoing support</h3><p>Establish repeatable delivery, monitoring, upgrades, runbooks, and support practices for the platform.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="wso2-planning wrap">
+      <div class="wso2-section-heading"><div><span class="eyebrow muted">Before implementation</span><h2>Plan the platform<br><em>for the long term.</em></h2></div><p>A successful WSO2 implementation includes product fit, deployment, support, and the people who will operate and extend it.</p></div>
+      <div class="wso2-planning-grid"><article th:each="item, stat : ${technologyDetail.considerations}"><span th:text="|0${stat.count}|">01</span><p th:text="${item}">Plan the implementation around your organisation's requirements.</p></article></div>
+    </section>
+
+    <section class="wso2-next-step">
+      <div class="wrap"><div><span class="eyebrow light">Your WSO2 next step</span><h2>Make your integrations<br><em>work better together.</em></h2><p>Tell us what you are building, improving, or integrating. We will help you define a practical next step for your WSO2 environment.</p><a class="button button-primary" href="/#contact">Contact Mananja Systems <span aria-hidden="true">&#8599;</span></a></div><div class="wso2-next-mark"><img th:src="${technologyLogo}" alt="WSO2 logo"><span>WSO2<br>WITH MANANJA SYSTEMS</span></div></div>
+    </section>
+  </main>
+  <footer class="footer wrap"><a class="brand" href="/" aria-label="Mananja Systems home"><img src="/mananja-logo-transparent.png" alt="Mananja Systems"></a><span>Better technology. Better together.</span><small>&copy; <span th:text="${currentYear}">2026</span> Mananja Systems</small><a class="back-top" href="#top" aria-label="Back to top">&#8593;</a></footer>
+  <script th:src="@{/js/navigation.js}" src="/js/navigation.js" defer></script>
+</body>
+</html>

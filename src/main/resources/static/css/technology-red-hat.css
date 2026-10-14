@@ -1,0 +1,41 @@
+.redhat-hero .technology-hero h1{max-width:700px}
+.redhat-hero .technology-hero h1 em{font-size:.63em;line-height:1.2}
+.redhat-overview{display:grid;grid-template-columns:1fr 1fr;gap:10%;align-items:start;padding-top:78px;padding-bottom:80px}
+.redhat-overview h2,.redhat-section-heading h2,.redhat-help h2,.redhat-next-step h2{margin:14px 0 0;color:#171b27;font-family:Montserrat,Inter,sans-serif;font-size:clamp(34px,4.3vw,55px);line-height:1.08;letter-spacing:-2px}
+.redhat-overview h2 em,.redhat-help h2 em,.redhat-next-step h2 em{color:#df3d35;font-style:normal}
+.redhat-overview>div:last-child p{margin:0 0 14px;color:#646a75;font-size:13px;line-height:1.9}
+.redhat-products{padding:78px 0 86px;background:#f5f4f2}
+.redhat-section-heading{display:grid;grid-template-columns:1fr .65fr;gap:9%;align-items:end;margin-bottom:31px}
+.redhat-section-heading h2{font-size:clamp(31px,3.6vw,44px)}
+.redhat-section-heading>p{margin:0;color:#646a75;font-size:12px;line-height:1.8}
+.redhat-product-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.redhat-product-grid article{min-height:270px;display:flex;flex-direction:column;padding:25px;border:1px solid #e6e4e1;border-radius:6px;background:#fff}
+.redhat-product-grid article>span{color:#df3d35;font-size:9px;font-weight:700;letter-spacing:1px}
+.redhat-product-grid h3{margin:21px 0 8px;color:#171b27;font-family:Montserrat,Inter,sans-serif;font-size:20px}
+.redhat-product-grid p{margin:0 0 18px;color:#646a75;font-size:12px;line-height:1.8}
+.redhat-product-grid a{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-top:auto;padding-top:12px;border-top:1px solid #eeedeb;color:#c9342d;font-size:11px;font-weight:700}
+.redhat-product-grid a b{font-size:16px;font-weight:400}
+.redhat-help{padding:82px 0;background:linear-gradient(130deg,#171b27,#252936);color:#fff}
+.redhat-help-layout{display:grid;grid-template-columns:.78fr 1fr;gap:13%;align-items:center}
+.redhat-help h2{margin-bottom:17px;color:#fff}
+.redhat-help-layout>div:first-child>p{max-width:430px;margin:0 0 22px;color:#c4c7cf;font-size:12px;line-height:1.85}
+.redhat-help .button-primary,.redhat-next-step .button-primary{background:#df3d35}
+.redhat-help-list article{display:grid;grid-template-columns:40px 1fr;gap:12px;padding:17px 0;border-bottom:1px solid #ffffff35}
+.redhat-help-list article:first-child{border-top:1px solid #ffffff35}
+.redhat-help-list article>span{padding-top:2px;color:#f16c60;font-size:10px;font-weight:700}
+.redhat-help-list h3{margin:0 0 5px;color:#fff;font-family:Montserrat,Inter,sans-serif;font-size:13px}
+.redhat-help-list p{margin:0;color:#c4c7cf;font-size:11px;line-height:1.7}
+.redhat-planning{padding-top:82px;padding-bottom:90px}
+.redhat-planning-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid #e4e4e5;border-left:1px solid #e4e4e5}
+.redhat-planning-grid article{min-height:120px;display:grid;grid-template-columns:40px 1fr;gap:13px;padding:19px 20px;border-right:1px solid #e4e4e5;border-bottom:1px solid #e4e4e5}
+.redhat-planning-grid article>span{color:#df3d35;font-size:10px;font-weight:700}
+.redhat-planning-grid p{margin:0;color:#474c55;font-size:12px;line-height:1.8}
+.redhat-next-step{padding:73px 0;background:#f5f4f2}
+.redhat-next-step>.wrap{display:flex;align-items:center;justify-content:space-between;gap:30px}
+.redhat-next-step h2{margin:13px 0;color:#171b27}
+.redhat-next-step p{max-width:520px;margin:16px 0 20px;color:#646a75;font-size:12px;line-height:1.8}
+.redhat-next-mark{width:160px;height:160px;flex:0 0 160px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;border-radius:50%;background:#fff;box-shadow:0 15px 45px #171b2712}
+.redhat-next-mark img{width:65px;height:65px;object-fit:contain}
+.redhat-next-mark span{color:#565c66;font-size:8px;font-weight:700;line-height:1.5;letter-spacing:1px;text-align:center}
+@media(max-width:760px){.redhat-overview{grid-template-columns:1fr;gap:20px;padding-top:57px;padding-bottom:60px}.redhat-section-heading{grid-template-columns:1fr;gap:12px}.redhat-help-layout{grid-template-columns:1fr;gap:31px}.redhat-next-step>.wrap{align-items:flex-start}}
+@media(max-width:600px){.redhat-hero .technology-hero h1 em{font-size:.72em}.redhat-products,.redhat-help{padding:58px 0}.redhat-product-grid,.redhat-planning-grid{grid-template-columns:1fr}.redhat-product-grid article{min-height:0;padding:20px}.redhat-help h2,.redhat-overview h2,.redhat-next-step h2{font-size:39px}.redhat-planning{padding-top:59px;padding-bottom:65px}.redhat-planning-grid{border-left:0}.redhat-planning-grid article{min-height:0;padding:16px 4px;border-right:0}.redhat-next-step{padding:57px 0}.redhat-next-step>.wrap{flex-direction:column}.redhat-next-mark{width:112px;height:112px;flex-basis:112px;align-self:center}.redhat-next-mark img{width:48px;height:48px}}

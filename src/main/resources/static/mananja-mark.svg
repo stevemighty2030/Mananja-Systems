@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 116 58" fill="none" role="img" aria-labelledby="title">
+  <title id="title">Mananja Systems symbol</title>
+  <path d="M14 43 42 15l30 29 30-31" stroke="#244E70" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="14" cy="43" r="9" fill="#fff" stroke="#244E70" stroke-width="5"/>
+  <circle cx="42" cy="15" r="9" fill="#fff" stroke="#398BA4" stroke-width="5"/>
+  <circle cx="72" cy="44" r="9" fill="#fff" stroke="#244E70" stroke-width="5"/>
+  <circle cx="102" cy="13" r="9" fill="#fff" stroke="#398BA4" stroke-width="5"/>
+</svg>

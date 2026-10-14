@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 500" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Mananja Systems integration capabilities</title>
+  <desc id="desc">APIs, ESB, Agentic AI and DevOps connect through the Mananja Systems integration layer.</desc>
+  <defs>
+    <filter id="shadow" x="20" y="20" width="600" height="470" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#12253B" flood-opacity=".08"/>
+    </filter>
+  </defs>
+  <rect x="1" y="1" width="638" height="498" rx="22" fill="#F7F8FA"/>
+  <path d="M224 112h32q24 0 24 24v48m88 0v-48q0-24 24-24h24M224 348h32q24 0 24-24v-48m88 0v48q0 24 24 24h24M320 286v124" stroke="#BAC4CE" stroke-width="2"/>
+  <g filter="url(#shadow)">
+    <rect x="32" y="70" width="192" height="84" rx="12" fill="#fff"/>
+    <rect x="416" y="70" width="192" height="84" rx="12" fill="#fff"/>
+    <rect x="32" y="306" width="192" height="84" rx="12" fill="#fff"/>
+    <rect x="416" y="306" width="192" height="84" rx="12" fill="#fff"/>
+    <rect x="228" y="410" width="184" height="64" rx="12" fill="#fff"/>
+    <rect x="240" y="174" width="160" height="112" rx="14" fill="#17212E"/>
+  </g>
+  <g fill="#D83C34" aria-hidden="true">
+    <circle r="3.5"><animateMotion dur="2.8s" begin="0s" repeatCount="indefinite" path="M224 112h32q24 0 24 24v38"/></circle>
+    <circle r="3.5"><animateMotion dur="3.1s" begin="0.6s" repeatCount="indefinite" path="M416 112h-32q-24 0-24 24v38"/></circle>
+    <circle r="3.5"><animateMotion dur="3s" begin="1.1s" repeatCount="indefinite" path="M224 348h32q24 0 24-24v-38"/></circle>
+    <circle r="3.5"><animateMotion dur="3.3s" begin="0.3s" repeatCount="indefinite" path="M416 348h-32q-24 0-24-24v-38"/></circle>
+    <circle r="3.5"><animateMotion dur="2.5s" begin="0.8s" repeatCount="indefinite" path="M320 286v124"/></circle>
+  </g>
+  <g fill="#F9ECEA"><circle cx="70" cy="112" r="19"/><circle cx="454" cy="112" r="19"/><circle cx="70" cy="348" r="19"/><circle cx="454" cy="348" r="19"/><circle cx="260" cy="442" r="18"/></g>
+  <g stroke="#D83C34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M64 112h12m-6-6v12M60 106l-3-3m3 15-3 3m23-15 3-3m-3 15 3 3"/>
+    <rect x="446" y="104" width="16" height="16" rx="2"/><path d="M449 109h10m-10 4h10m-10 4h6"/>
+    <circle cx="70" cy="348" r="9"/><circle cx="70" cy="348" r="3" fill="#D83C34"/><path d="M70 333v4m0 22v4m-15-15h4m22 0h4m-26-11 3 3m16 16 3 3m0-22-3 3m-16 16-3 3"/>
+    <path d="M446 339h16v13h-16zM450 335h16v13m-20 21 7-7 5 4 10-11"/><circle cx="458" cy="365" r="2" fill="#D83C34"/>
+    <path d="M252 448v-9m8 9v-15m8 15v-6m-18-11h20"/>
+  </g>
+  <g font-family="Inter,Arial,sans-serif" fill="#202A3B">
+    <text x="101" y="108" font-size="15" font-weight="700">APIs</text><text x="101" y="127" font-size="10" fill="#748091">Services and access</text>
+    <text x="485" y="108" font-size="15" font-weight="700">ESB</text><text x="485" y="127" font-size="10" fill="#748091">Enterprise messaging</text>
+    <text x="101" y="344" font-size="14" font-weight="700">Agentic AI</text><text x="101" y="363" font-size="10" fill="#748091">Connected workflows</text>
+    <text x="485" y="344" font-size="15" font-weight="700">DevOps</text><text x="485" y="363" font-size="10" fill="#748091">Build and delivery</text>
+    <text x="288" y="439" font-size="13" font-weight="700">Observability</text><text x="288" y="457" font-size="9" fill="#748091">Metrics, logs and traces</text>
+  </g>
+  <path d="M240 188h5v84h-5z" fill="#E05249"/>
+  <text x="320" y="237" text-anchor="middle" font-family="Montserrat,Arial,sans-serif" font-size="15" font-weight="700" fill="#fff">Integrations</text>
+</svg>
