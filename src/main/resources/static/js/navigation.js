@@ -1,4 +1,4 @@
-const technologyProfiles = {
+﻿const technologyProfiles = {
   wso2: {
     title: 'WSO2', overview: 'Integration, API and identity management technology.',
     expertise: ['Overview', 'API Manager', 'Enterprise Integrator', 'Identity Server', 'Choreo'],
@@ -6,13 +6,13 @@ const technologyProfiles = {
     resources: ['API Manager implementation', 'Integration services', 'Talk to our team']
   },
   activemq: {
-    title: 'Apache ActiveMQ®', overview: 'Messaging platforms and application connectivity.',
-    expertise: ['Overview', 'Apache ActiveMQ®', 'Apache Artemis™', 'Apache Camel™'],
+    title: 'Apache ActiveMQÂ®', overview: 'Messaging platforms and application connectivity.',
+    expertise: ['Overview', 'Apache ActiveMQÂ®', 'Apache Artemisâ„¢', 'Apache Camelâ„¢'],
     industries: ['Banking and Finance', 'Telecommunications', 'Retail and eCommerce', 'Hospitality and services'],
     resources: ['Messaging implementation', 'Migration services', 'Talk to our team']
   },
   kafka: {
-    title: 'Apache Kafka®', overview: 'Event streaming and data flows across connected systems.',
+    title: 'Apache KafkaÂ®', overview: 'Event streaming and data flows across connected systems.',
     expertise: ['Overview', 'Kafka platform integration', 'Event streaming', 'Data pipelines'],
     industries: ['Banking and Finance', 'Fintech', 'Retail and eCommerce', 'Technology teams'],
     resources: ['Streaming implementation', 'Integration services', 'Talk to our team']
@@ -36,7 +36,7 @@ const technologyProfiles = {
     resources: ['Integration services', 'Platform support', 'Talk to our team']
   },
   'ibm-mq': {
-    title: 'IBM MQ™', overview: 'Enterprise messaging and application connectivity.',
+    title: 'IBM MQâ„¢', overview: 'Enterprise messaging and application connectivity.',
     expertise: ['Overview', 'Messaging architecture', 'Application connectivity', 'Operations'],
     industries: ['Banking and Finance', 'Telecommunications', 'SACCOs and cooperatives', 'Public sector and media'],
     resources: ['MQ implementation', 'Migration services', 'Talk to our team']
@@ -222,7 +222,7 @@ softwareContactForm?.addEventListener('submit', (event) => {
     'Project details:',
     formData.get('message')
   ].join('\n');
-  window.location.href = `mailto:hello@mananja.system?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+  window.location.href = `mailto:wambu2040@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
 });
 
 const consultationForm = document.querySelector('#consultationForm');
@@ -239,7 +239,7 @@ consultationForm?.addEventListener('submit', (event) => {
     'Project details:',
     formData.get('message')
   ].join('\n');
-  window.location.href = `mailto:hello@mananja.system?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+  window.location.href = `mailto:wambu2040@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
 });
 
 document.querySelectorAll('.technology-contact-form').forEach((form) => {
@@ -258,6 +258,6 @@ document.querySelectorAll('.technology-contact-form').forEach((form) => {
       'What they want to achieve:',
       formData.get('message')
     ].join('\n');
-    window.location.href = `mailto:hello@mananja.system?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+    window.location.href = `mailto:wambu2040@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
   });
 });

@@ -17,6 +17,7 @@
   <link rel="stylesheet" th:href="@{/css/industries-menu.css}" href="/css/industries-menu.css">
 </head>
 <body id="top">
+  <th:block th:replace="~{fragments/contact-bar :: contactBar}"></th:block>
   <header class="site-header">
     <a class="brand" href="/" aria-label="Mananja Systems home"><img src="/mananja-mark.svg" alt=""><span class="brand-name">Mananja Systems</span></a>
     <details class="mobile-menu">
@@ -74,7 +75,7 @@
 
     <section class="technology-next-step wrap">
       <div><span class="eyebrow muted">A connected technology foundation</span><h2>Let us make your systems<br><em>work better together.</em></h2></div>
-      <div><p>Tell us what you are building, improving, or integrating. We will help you define a practical next step for your technology landscape.</p><a class="button button-primary" href="mailto:hello@mananja.system?subject=Technology%20services%20enquiry">Contact Mananja Systems <span aria-hidden="true">&#8599;</span></a><a class="technology-inline-link" th:if="${technology.name == 'WSO2'}" href="/services/api-integrations">Explore WSO2 API Manager implementation <span aria-hidden="true">&#8594;</span></a></div>
+      <div><p>Tell us what you are building, improving, or integrating. We will help you define a practical next step for your technology landscape.</p><a class="button button-primary" href="mailto:wambu2040@gmail.com?subject=Technology%20services%20enquiry">Contact Mananja Systems <span aria-hidden="true">&#8599;</span></a><a class="technology-inline-link" th:if="${technology.name == 'WSO2'}" href="/services/api-integrations">Explore WSO2 API Manager implementation <span aria-hidden="true">&#8594;</span></a></div>
     </section>
     <th:block th:replace="~{fragments/technology-contact :: contact}"></th:block>
 </main>

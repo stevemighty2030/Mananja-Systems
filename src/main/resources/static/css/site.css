@@ -10,6 +10,15 @@ body{font-family:Inter,Arial,sans-serif;color:var(--ink);background:var(--paper)
 h1,h2,h3{font-family:Sora,Inter,sans-serif;letter-spacing:-.045em}
 .wrap{width:min(100% - 96px,1240px)}
 .site-header{height:80px;padding-inline:max(48px,calc((100% - 1320px)/2));box-shadow:0 6px 24px #0a23420a;background:#fffffff5;backdrop-filter:blur(14px)}
+.contact-bar{position:relative;z-index:11;background:#21152e;color:#fff;font-size:14px;font-weight:600}
+.contact-bar-inner{width:min(100% - 96px,1460px);min-height:54px;margin-inline:auto;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.contact-bar-actions,.contact-bar-details{display:flex;align-items:center;gap:13px;white-space:nowrap}
+.contact-bar-pill{padding:5px 13px;border-radius:20px;background:#08b5dc;color:#fff;line-height:1.3}
+.contact-bar-pill:hover{background:#0799bc}
+.contact-bar-details{gap:26px;font-size:13px}
+.contact-bar-hours span,.contact-bar-phone span{margin-right:7px;color:#08b5dc;font-size:18px}
+.contact-bar-phone{font-weight:700}
+@media(max-width:760px){.contact-bar-inner{width:calc(100% - 32px);padding:9px 0;align-items:flex-start;flex-direction:column;gap:7px}.contact-bar-actions,.contact-bar-details{gap:9px;font-size:11px}.contact-bar-details{flex-wrap:wrap}.contact-bar-hours span,.contact-bar-phone span{font-size:14px}.contact-bar-pill{padding:4px 9px}}
 .desktop-nav{font-size:12px;gap:clamp(20px,2.4vw,36px)}
 .desktop-nav>a:not(.nav-contact){transition:color .2s}
 .nav-contact{padding:14px 21px;border-radius:5px;background:var(--navy);box-shadow:0 8px 18px #0a234222}
