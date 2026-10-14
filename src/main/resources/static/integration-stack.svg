@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Connected integration platform layers</title>
+  <desc id="desc">A layered illustration of API management, event streaming, DevOps, identity, and microservices working together.</desc>
+  <defs>
+    <linearGradient id="surface" x1="160" y1="80" x2="560" y2="430" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff"/>
+      <stop offset="1" stop-color="#f4f7fa"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="196" y1="136" x2="523" y2="136" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#df3d35"/>
+      <stop offset="1" stop-color="#f17469"/>
+    </linearGradient>
+    <filter id="shadow" x="58" y="35" width="620" height="500" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="12" stdDeviation="13" flood-color="#142544" flood-opacity=".13"/>
+    </filter>
+  </defs>
+  <circle cx="380" cy="275" r="212" fill="#edf4f8"/>
+  <circle cx="380" cy="275" r="166" stroke="#d8e4eb" stroke-dasharray="3 8"/>
+  <g filter="url(#shadow)" font-family="Inter,Arial,sans-serif">
+    <g transform="translate(72 60) rotate(-8 280 48)">
+      <path d="M24 10h495l50 42v66H74l-50-42V10Z" fill="#d9e0e6"/>
+      <path d="M24 10h495l50 42H74L24 10Z" fill="#fff"/>
+      <path d="M74 52h495v66H74V52Z" fill="url(#surface)"/>
+      <path d="M24 10h495v66H24V10Z" fill="#fff"/>
+      <path d="M24 10h6v66h-6z" fill="url(#accent)"/>
+      <circle cx="92" cy="43" r="20" fill="#fbe9e7"/>
+      <path d="M84 43h16m-8-8v16m-14-15 4 4m20 11 4 4m0-19-4 4m-20 11-4 4" stroke="#df3d35" stroke-width="2" stroke-linecap="round"/>
+      <text x="128" y="40" fill="#8a95a3" font-size="10" font-weight="700" letter-spacing="1.5">CONNECT</text>
+      <text x="128" y="63" fill="#142544" font-size="19" font-weight="700">API Management</text>
+      <circle cx="518" cy="43" r="5" fill="#df3d35"/>
+    </g>
+    <g transform="translate(52 142) rotate(-8 280 48)">
+      <path d="M24 10h495l50 42v66H74l-50-42V10Z" fill="#d9e0e6"/>
+      <path d="M24 10h495l50 42H74L24 10Z" fill="#fff"/>
+      <path d="M74 52h495v66H74V52Z" fill="url(#surface)"/>
+      <path d="M24 10h495v66H24V10Z" fill="#fff"/>
+      <path d="M24 10h6v66h-6z" fill="#eb766d"/>
+      <circle cx="92" cy="43" r="20" fill="#eef5f8"/>
+      <path d="M80 43h24m-8-8 8 8-8 8m-8-16-8 8 8 8" stroke="#327293" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="128" y="40" fill="#8a95a3" font-size="10" font-weight="700" letter-spacing="1.5">STREAM</text>
+      <text x="128" y="63" fill="#142544" font-size="19" font-weight="700">Event Streaming</text>
+      <circle cx="518" cy="43" r="5" fill="#53a4bd"/>
+    </g>
+    <g transform="translate(34 224) rotate(-8 280 48)">
+      <path d="M24 10h495l50 42v66H74l-50-42V10Z" fill="#d9e0e6"/>
+      <path d="M24 10h495l50 42H74L24 10Z" fill="#fff"/>
+      <path d="M74 52h495v66H74V52Z" fill="url(#surface)"/>
+      <path d="M24 10h495v66H24V10Z" fill="#fff"/>
+      <path d="M24 10h6v66h-6z" fill="#e9857d"/>
+      <circle cx="92" cy="43" r="20" fill="#fbe9e7"/>
+      <path d="M82 37h20v12H82zM88 53h8m-4-4v4m-8-20h12" stroke="#df3d35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="128" y="40" fill="#8a95a3" font-size="10" font-weight="700" letter-spacing="1.5">DELIVER</text>
+      <text x="128" y="63" fill="#142544" font-size="19" font-weight="700">DevOps &amp; CI/CD</text>
+      <circle cx="518" cy="43" r="5" fill="#df3d35"/>
+    </g>
+    <g transform="translate(52 306) rotate(-8 280 48)">
+      <path d="M24 10h495l50 42v66H74l-50-42V10Z" fill="#d9e0e6"/>
+      <path d="M24 10h495l50 42H74L24 10Z" fill="#fff"/>
+      <path d="M74 52h495v66H74V52Z" fill="url(#surface)"/>
+      <path d="M24 10h495v66H24V10Z" fill="#fff"/>
+      <path d="M24 10h6v66h-6z" fill="#eb766d"/>
+      <circle cx="92" cy="43" r="20" fill="#eef5f8"/>
+      <path d="M92 31 103 36v8c0 8-11 13-11 13S81 52 81 44v-8l11-5Z" stroke="#327293" stroke-width="2" stroke-linejoin="round"/><path d="m87 43 4 4 7-8" stroke="#327293" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="128" y="40" fill="#8a95a3" font-size="10" font-weight="700" letter-spacing="1.5">PROTECT</text>
+      <text x="128" y="63" fill="#142544" font-size="19" font-weight="700">Identity &amp; Access</text>
+      <circle cx="518" cy="43" r="5" fill="#53a4bd"/>
+    </g>
+    <g transform="translate(72 388) rotate(-8 280 48)">
+      <path d="M24 10h495l50 42v66H74l-50-42V10Z" fill="#d9e0e6"/>
+      <path d="M24 10h495l50 42H74L24 10Z" fill="#fff"/>
+      <path d="M74 52h495v66H74V52Z" fill="url(#surface)"/>
+      <path d="M24 10h495v66H24V10Z" fill="#fff"/>
+      <path d="M24 10h6v66h-6z" fill="#df3d35"/>
+      <circle cx="92" cy="43" r="20" fill="#fbe9e7"/>
+      <rect x="83" y="34" width="9" height="9" rx="2" stroke="#df3d35" stroke-width="2"/><rect x="95" y="34" width="9" height="9" rx="2" stroke="#df3d35" stroke-width="2"/><rect x="89" y="46" width="9" height="9" rx="2" stroke="#df3d35" stroke-width="2"/>
+      <text x="128" y="40" fill="#8a95a3" font-size="10" font-weight="700" letter-spacing="1.5">BUILD</text>
+      <text x="128" y="63" fill="#142544" font-size="19" font-weight="700">Microservices</text>
+      <circle cx="518" cy="43" r="5" fill="#df3d35"/>
+    </g>
+  </g>
+  <g font-family="Inter,Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="1.2">
+    <rect x="520" y="476" width="126" height="29" rx="14.5" fill="#fff" stroke="#e3eaf0"/>
+    <circle cx="537" cy="490.5" r="4" fill="#df3d35"/>
+    <text x="550" y="494" fill="#53627a">ONE CONNECTED SYSTEM</text>
+  </g>
+</svg>

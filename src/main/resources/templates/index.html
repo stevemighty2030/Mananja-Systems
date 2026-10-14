@@ -13,6 +13,7 @@
   <link rel="stylesheet" th:href="@{/css/site-footer.css}" href="/css/site-footer.css">
   <link rel="stylesheet" th:href="@{/css/solutions-menu.css}" href="/css/solutions-menu.css">
   <link rel="stylesheet" th:href="@{/css/industries-menu.css}" href="/css/industries-menu.css">
+  <link rel="stylesheet" th:href="@{/css/integration-feature.css}" href="/css/integration-feature.css">
 </head>
 <body id="top">
   <header class="site-header">
@@ -39,17 +40,17 @@
 
     <div class="trust-strip" aria-label="Our approach"><span>Understand</span><b>&#10003;</b><span>Connect</span><b>&#10003;</b><span>Deliver</span><b>&#10003;</b><span>Keep improving</span></div>
 
-<section class="services section wrap" id="services">
-      <div class="section-heading"><div><div class="eyebrow muted">Systems integration services</div><h2>From integration strategy<br><em>to dependable delivery.</em></h2></div><p>Plan, build, connect, and support the API and integration platforms that keep business applications working together.</p></div>
-      <div class="service-grid">
-        <article class="service-card" th:each="service : ${services}">
-          <div class="service-card-top"><span th:text="${service.number}">01</span><span class="service-icon" aria-hidden="true">&#8599;</span></div>
-          <h3 th:text="${service.title}">API Integrations</h3><p th:text="${service.description}">Connect the platforms your organisation depends on.</p>
-          <a th:if="${service.externalLink}" th:href="${service.link}" target="_blank" rel="noopener noreferrer">Explore this capability <span aria-hidden="true">&#8599;</span></a>
-          <a th:unless="${service.externalLink}" th:href="${service.link}">Explore this capability <span aria-hidden="true">&#8599;</span></a>
-        </article>
+    <section class="integration-feature" id="services">
+      <div class="wrap integration-feature-layout">
+        <div class="integration-feature-copy">
+          <div class="eyebrow muted">Systems integration services</div>
+          <h2>Build an integration strategy<br><em>that works for you.</em></h2>
+          <p>Bring APIs, messaging, platforms, and delivery workflows together in a dependable foundation for your business.</p>
+          <a class="integration-feature-link" href="/services/api-integrations">Explore our integration expertise <span aria-hidden="true">&#8599;</span></a>
+          <div class="integration-feature-tags" aria-label="Integration capabilities"><span>API management</span><span>Messaging</span><span>DevOps</span><span>Enterprise AI</span></div>
+        </div>
+        <div class="integration-feature-media"><img src="/integration-stack.svg" alt="Layered integration platform diagram showing API management, event streaming, DevOps, identity and access, and microservices"></div>
       </div>
-      <div class="service-note"><span>Need a mix of services?</span><a href="#contact">Let's shape the right engagement <b aria-hidden="true">&#10003;</b></a></div>
     </section>
 
 
