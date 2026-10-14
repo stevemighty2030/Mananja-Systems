@@ -40,7 +40,7 @@
   top: 82px;
   left: 50%;
   display: none;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 16px;
   width: min(94vw, 1500px);
   max-height: calc(100vh - 100px);
