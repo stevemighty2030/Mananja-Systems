@@ -1,86 +1,170 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" fill="none" role="img" aria-labelledby="title desc">
-  <title id="title">Connected integration platform layers</title>
-  <desc id="desc">A layered illustration of API management, event streaming, DevOps, identity, and microservices working together.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 820" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Connected integration platforms</title>
+  <desc id="desc">A stack of illustrated platform cards representing APIs, event streaming, DevOps, identity, and microservices working together.</desc>
   <defs>
-    <linearGradient id="surface" x1="160" y1="80" x2="560" y2="430" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#fff"/>
-      <stop offset="1" stop-color="#f4f7fa"/>
+    <linearGradient id="backdrop" x1="90" y1="70" x2="650" y2="740" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FBFC"/>
+      <stop offset="1" stop-color="#EDF3F6"/>
     </linearGradient>
-    <linearGradient id="accent" x1="196" y1="136" x2="523" y2="136" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#df3d35"/>
-      <stop offset="1" stop-color="#f17469"/>
+    <linearGradient id="cardFace" x1="180" y1="45" x2="600" y2="240" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F7F9FB"/>
     </linearGradient>
-    <filter id="shadow" x="58" y="35" width="620" height="500" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
-      <feDropShadow dx="0" dy="12" stdDeviation="13" flood-color="#142544" flood-opacity=".13"/>
+    <linearGradient id="photoOne" x1="70" y1="50" x2="360" y2="240" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A5362"/>
+      <stop offset=".5" stop-color="#56A9B6"/>
+      <stop offset="1" stop-color="#D6E2E4"/>
+    </linearGradient>
+    <linearGradient id="photoTwo" x1="20" y1="0" x2="370" y2="230" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D9E9E9"/>
+      <stop offset=".52" stop-color="#5792A4"/>
+      <stop offset="1" stop-color="#233C55"/>
+    </linearGradient>
+    <linearGradient id="photoThree" x1="15" y1="20" x2="380" y2="230" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#19374F"/>
+      <stop offset=".55" stop-color="#7196A5"/>
+      <stop offset="1" stop-color="#DBE5E6"/>
+    </linearGradient>
+    <linearGradient id="photoFour" x1="50" y1="5" x2="390" y2="230" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DCE9E8"/>
+      <stop offset=".48" stop-color="#7BA8A8"/>
+      <stop offset="1" stop-color="#253E50"/>
+    </linearGradient>
+    <linearGradient id="photoFive" x1="35" y1="20" x2="390" y2="230" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#193A4C"/>
+      <stop offset=".5" stop-color="#4C8995"/>
+      <stop offset="1" stop-color="#DAE4E6"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="170%" height="190%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="22" stdDeviation="18" flood-color="#17334A" flood-opacity=".18"/>
     </filter>
+    <filter id="softGlow" x="60" y="40" width="650" height="720" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="30"/>
+    </filter>
+    <clipPath id="clipOne" clipPathUnits="userSpaceOnUse"><path d="M76 100 366 28l266 133-290 72L76 100Z"/></clipPath>
+    <clipPath id="clipTwo" clipPathUnits="userSpaceOnUse"><path d="M76 100 366 28l266 133-290 72L76 100Z"/></clipPath>
+    <clipPath id="clipThree" clipPathUnits="userSpaceOnUse"><path d="M76 100 366 28l266 133-290 72L76 100Z"/></clipPath>
+    <clipPath id="clipFour" clipPathUnits="userSpaceOnUse"><path d="M76 100 366 28l266 133-290 72L76 100Z"/></clipPath>
+    <clipPath id="clipFive" clipPathUnits="userSpaceOnUse"><path d="M76 100 366 28l266 133-290 72L76 100Z"/></clipPath>
   </defs>
-  <circle cx="380" cy="275" r="212" fill="#edf4f8"/>
-  <circle cx="380" cy="275" r="166" stroke="#d8e4eb" stroke-dasharray="3 8"/>
-  <g filter="url(#shadow)" font-family="Inter,Arial,sans-serif">
-    <g transform="translate(72 60) rotate(-8 280 48)">
-      <path d="M24 10h495l50 42v66H74l-50-42V10Z" fill="#d9e0e6"/>
-      <path d="M24 10h495l50 42H74L24 10Z" fill="#fff"/>
-      <path d="M74 52h495v66H74V52Z" fill="url(#surface)"/>
-      <path d="M24 10h495v66H24V10Z" fill="#fff"/>
-      <path d="M24 10h6v66h-6z" fill="url(#accent)"/>
-      <circle cx="92" cy="43" r="20" fill="#fbe9e7"/>
-      <path d="M84 43h16m-8-8v16m-14-15 4 4m20 11 4 4m0-19-4 4m-20 11-4 4" stroke="#df3d35" stroke-width="2" stroke-linecap="round"/>
-      <text x="128" y="40" fill="#8a95a3" font-size="10" font-weight="700" letter-spacing="1.5">CONNECT</text>
-      <text x="128" y="63" fill="#142544" font-size="19" font-weight="700">API Management</text>
-      <circle cx="518" cy="43" r="5" fill="#df3d35"/>
+
+  <ellipse cx="390" cy="414" rx="312" ry="330" fill="url(#backdrop)"/>
+  <ellipse cx="390" cy="428" rx="270" ry="250" fill="#DCE8EC" opacity=".65" filter="url(#softGlow)"/>
+
+  <!-- Rear cards give the stack its floating, layered depth. -->
+  <g filter="url(#shadow)" font-family="Inter, Arial, sans-serif">
+    <g transform="translate(0 500) rotate(-9 350 130)">
+      <path d="M76 100 366 28l266 133-290 72L76 100Z" fill="#D2DCE1"/>
+      <path d="M76 100 366 28l266 133-290 72L76 100Z" fill="url(#cardFace)"/>
+      <g clip-path="url(#clipFive)">
+        <path d="M44 60h300v230H44z" fill="url(#photoFive)"/>
+        <path d="m65 196 80-91 64 70 57-52 93 103H65Z" fill="#244B5A" opacity=".78"/>
+        <path d="m62 87 172-43 21 9-171 45-22-11Z" fill="#D9E8E9"/>
+        <path d="m62 99 171-44v72L62 171V99Z" fill="#193A4C"/>
+        <path d="m83 112 95-24m-94 35 75-18m-76 31 105-26" stroke="#5ED4D1" stroke-width="3" opacity=".8"/>
+        <circle cx="170" cy="166" r="30" fill="#C6DADB" opacity=".8"/>
+        <path d="M129 235c5-33 21-52 43-52s39 18 44 52" fill="#344F5D"/>
+        <path d="M330 99 608 169l-283 70-20-7 282-69-257-65Z" fill="#fff" opacity=".94"/>
+      </g>
+      <path d="M76 100 366 28l266 133-290 72L76 100Z" stroke="#fff" stroke-width="4"/>
     </g>
-    <g transform="translate(52 142) rotate(-8 280 48)">
-      <path d="M24 10h495l50 42v66H74l-50-42V10Z" fill="#d9e0e6"/>
-      <path d="M24 10h495l50 42H74L24 10Z" fill="#fff"/>
-      <path d="M74 52h495v66H74V52Z" fill="url(#surface)"/>
-      <path d="M24 10h495v66H24V10Z" fill="#fff"/>
-      <path d="M24 10h6v66h-6z" fill="#eb766d"/>
-      <circle cx="92" cy="43" r="20" fill="#eef5f8"/>
-      <path d="M80 43h24m-8-8 8 8-8 8m-8-16-8 8 8 8" stroke="#327293" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      <text x="128" y="40" fill="#8a95a3" font-size="10" font-weight="700" letter-spacing="1.5">STREAM</text>
-      <text x="128" y="63" fill="#142544" font-size="19" font-weight="700">Event Streaming</text>
-      <circle cx="518" cy="43" r="5" fill="#53a4bd"/>
+
+    <g transform="translate(0 375) rotate(-9 350 130)">
+      <path d="M76 100 366 28l266 133-290 72L76 100Z" fill="#D2DCE1"/>
+      <path d="M76 100 366 28l266 133-290 72L76 100Z" fill="url(#cardFace)"/>
+      <g clip-path="url(#clipFour)">
+        <path d="M44 60h300v230H44z" fill="url(#photoFour)"/>
+        <path d="m44 205 88-78 70 45 66-63 93 111H44Z" fill="#274854" opacity=".78"/>
+        <path d="M83 80h209l19 10-210 52-18-62Z" fill="#E8F1F0"/>
+        <path d="m96 88 182 45v57L96 145V88Z" fill="#294657"/>
+        <path d="m121 103 129 32m-126-17 125 31m-121-16 117 30" stroke="#8DC4C6" stroke-width="4"/>
+        <path d="M128 186c2-27 15-43 35-43 21 0 35 17 37 45l-72-2Z" fill="#C5D8D8"/>
+        <path d="M126 183c-20 9-33 22-40 39h137c-7-18-19-30-41-39" fill="#405B65"/>
+        <path d="m326 96 281 71-281 70-22-8 276-68-257-65Z" fill="#fff" opacity=".95"/>
+      </g>
+      <path d="M76 100 366 28l266 133-290 72L76 100Z" stroke="#fff" stroke-width="4"/>
     </g>
-    <g transform="translate(34 224) rotate(-8 280 48)">
-      <path d="M24 10h495l50 42v66H74l-50-42V10Z" fill="#d9e0e6"/>
-      <path d="M24 10h495l50 42H74L24 10Z" fill="#fff"/>
-      <path d="M74 52h495v66H74V52Z" fill="url(#surface)"/>
-      <path d="M24 10h495v66H24V10Z" fill="#fff"/>
-      <path d="M24 10h6v66h-6z" fill="#e9857d"/>
-      <circle cx="92" cy="43" r="20" fill="#fbe9e7"/>
-      <path d="M82 37h20v12H82zM88 53h8m-4-4v4m-8-20h12" stroke="#df3d35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      <text x="128" y="40" fill="#8a95a3" font-size="10" font-weight="700" letter-spacing="1.5">DELIVER</text>
-      <text x="128" y="63" fill="#142544" font-size="19" font-weight="700">DevOps &amp; CI/CD</text>
-      <circle cx="518" cy="43" r="5" fill="#df3d35"/>
+
+    <g transform="translate(0 250) rotate(-9 350 130)">
+      <path d="M76 100 366 28l266 133-290 72L76 100Z" fill="#D2DCE1"/>
+      <path d="M76 100 366 28l266 133-290 72L76 100Z" fill="url(#cardFace)"/>
+      <g clip-path="url(#clipThree)">
+        <path d="M44 60h300v230H44z" fill="url(#photoThree)"/>
+        <path d="M42 199c54-74 111-84 167-40 33 26 65 33 103 6l42 86H42v-52Z" fill="#253D50" opacity=".9"/>
+        <path d="M74 73h201v73L74 96V73Z" fill="#C9DDE0"/>
+        <path d="m91 81 173 40v54L91 135V81Z" fill="#132D41"/>
+        <path d="m112 99 125 29m-122-14 120 29m-116-14 115 27" stroke="#65B7C7" stroke-width="4"/>
+        <path d="M170 177c7-21 21-32 39-32 19 0 32 13 38 34l-77-2Z" fill="#E1E8E6"/>
+        <path d="M157 187c-21 10-35 23-41 40h151c-5-17-19-31-42-41" fill="#516B73"/>
+        <path d="m328 95 278 71-278 70-24-9 274-67-253-64Z" fill="#fff" opacity=".96"/>
+      </g>
+      <path d="M76 100 366 28l266 133-290 72L76 100Z" stroke="#fff" stroke-width="4"/>
+      <path d="m82 101 287-71 7 3-287 72-7-4Z" fill="#DF3D35"/>
     </g>
-    <g transform="translate(52 306) rotate(-8 280 48)">
-      <path d="M24 10h495l50 42v66H74l-50-42V10Z" fill="#d9e0e6"/>
-      <path d="M24 10h495l50 42H74L24 10Z" fill="#fff"/>
-      <path d="M74 52h495v66H74V52Z" fill="url(#surface)"/>
-      <path d="M24 10h495v66H24V10Z" fill="#fff"/>
-      <path d="M24 10h6v66h-6z" fill="#eb766d"/>
-      <circle cx="92" cy="43" r="20" fill="#eef5f8"/>
-      <path d="M92 31 103 36v8c0 8-11 13-11 13S81 52 81 44v-8l11-5Z" stroke="#327293" stroke-width="2" stroke-linejoin="round"/><path d="m87 43 4 4 7-8" stroke="#327293" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      <text x="128" y="40" fill="#8a95a3" font-size="10" font-weight="700" letter-spacing="1.5">PROTECT</text>
-      <text x="128" y="63" fill="#142544" font-size="19" font-weight="700">Identity &amp; Access</text>
-      <circle cx="518" cy="43" r="5" fill="#53a4bd"/>
+
+    <g transform="translate(0 125) rotate(-9 350 130)">
+      <path d="M76 100 366 28l266 133-290 72L76 100Z" fill="#D2DCE1"/>
+      <path d="M76 100 366 28l266 133-290 72L76 100Z" fill="url(#cardFace)"/>
+      <g clip-path="url(#clipTwo)">
+        <path d="M44 60h300v230H44z" fill="url(#photoTwo)"/>
+        <path d="m48 200 68-77 51 52 73-89 89 130H48Z" fill="#1D4051" opacity=".8"/>
+        <path d="m67 80 188 46v60L67 139V80Z" fill="#123249"/>
+        <path d="m87 95 139 34m-136-19 133 32m-129-17 128 30" stroke="#7DCDD2" stroke-width="4"/>
+        <path d="M138 173c4-27 17-42 36-42 20 0 34 15 39 43l-75-1Z" fill="#D4E2E1"/>
+        <path d="M126 183c-20 9-34 21-41 40h143c-6-17-20-30-43-40" fill="#435D69"/>
+        <path d="m326 95 279 71-279 70-24-8 275-68-253-64Z" fill="#fff" opacity=".96"/>
+      </g>
+      <path d="M76 100 366 28l266 133-290 72L76 100Z" stroke="#fff" stroke-width="4"/>
+      <path d="m82 101 287-71 7 3-287 72-7-4Z" fill="#68B8C5"/>
     </g>
-    <g transform="translate(72 388) rotate(-8 280 48)">
-      <path d="M24 10h495l50 42v66H74l-50-42V10Z" fill="#d9e0e6"/>
-      <path d="M24 10h495l50 42H74L24 10Z" fill="#fff"/>
-      <path d="M74 52h495v66H74V52Z" fill="url(#surface)"/>
-      <path d="M24 10h495v66H24V10Z" fill="#fff"/>
-      <path d="M24 10h6v66h-6z" fill="#df3d35"/>
-      <circle cx="92" cy="43" r="20" fill="#fbe9e7"/>
-      <rect x="83" y="34" width="9" height="9" rx="2" stroke="#df3d35" stroke-width="2"/><rect x="95" y="34" width="9" height="9" rx="2" stroke="#df3d35" stroke-width="2"/><rect x="89" y="46" width="9" height="9" rx="2" stroke="#df3d35" stroke-width="2"/>
-      <text x="128" y="40" fill="#8a95a3" font-size="10" font-weight="700" letter-spacing="1.5">BUILD</text>
-      <text x="128" y="63" fill="#142544" font-size="19" font-weight="700">Microservices</text>
-      <circle cx="518" cy="43" r="5" fill="#df3d35"/>
+
+    <!-- Front card: API management, with a branded red capability mark. -->
+    <g transform="translate(0 0) rotate(-9 350 130)">
+      <path d="M76 100 366 28l266 133-290 72L76 100Z" fill="#CDD8DE"/>
+      <path d="M76 100 366 28l266 133-290 72L76 100Z" fill="url(#cardFace)"/>
+      <g clip-path="url(#clipOne)">
+        <path d="M44 60h300v230H44z" fill="url(#photoOne)"/>
+        <path d="m39 203 82-91 68 53 61-77 106 142H39v-27Z" fill="#164254" opacity=".88"/>
+        <path d="m62 75 190 47v60L62 135V75Z" fill="#092B3A"/>
+        <path d="m83 92 142 35m-139-20 137 33m-133-18 131 31" stroke="#67C7CC" stroke-width="4"/>
+        <path d="M125 158c5-26 19-40 39-40 21 0 35 15 40 43l-79-3Z" fill="#D7E1DE"/>
+        <path d="M111 171c-21 9-36 24-43 47h155c-6-21-21-35-44-45" fill="#405B61"/>
+        <path d="m328 94 276 71-276 70-22-8 273-67-251-64Z" fill="#fff" opacity=".96"/>
+      </g>
+      <path d="M76 100 366 28l266 133-290 72L76 100Z" stroke="#fff" stroke-width="4"/>
+      <path d="m82 101 287-71 7 3-287 72-7-4Z" fill="#DF3D35"/>
+      <circle cx="190" cy="115" r="29" fill="#FBE9E7"/>
+      <g stroke="#DF3D35" stroke-width="3" stroke-linecap="round">
+        <path d="m176 115 28 0m-14-14v28m-11-23-6-7m31 37-6-7m0-23 6-7m-31 37 6-7"/>
+      </g>
+      <text x="235" y="104" fill="#8795A6" font-size="11" font-weight="700" letter-spacing="1.7">CONNECT</text>
+      <text x="235" y="132" fill="#142544" font-size="22" font-weight="700">API Management</text>
+      <circle cx="592" cy="127" r="7" fill="#DF3D35"/>
     </g>
   </g>
-  <g font-family="Inter,Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="1.2">
-    <rect x="520" y="476" width="126" height="29" rx="14.5" fill="#fff" stroke="#e3eaf0"/>
-    <circle cx="537" cy="490.5" r="4" fill="#df3d35"/>
-    <text x="550" y="494" fill="#53627a">ONE CONNECTED SYSTEM</text>
+
+  <!-- Floating labels identify each layer while preserving the open, airy reference style. -->
+  <g font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="1.2">
+    <g transform="translate(90 255) rotate(-9)">
+      <rect width="205" height="36" rx="18" fill="#fff" stroke="#E1E8EC"/>
+      <circle cx="19" cy="18" r="5" fill="#52A9BC"/>
+      <text x="34" y="23" fill="#52657B" font-size="10">EVENT STREAMING</text>
+    </g>
+    <g transform="translate(404 454) rotate(-9)">
+      <rect width="205" height="36" rx="18" fill="#fff" stroke="#E1E8EC"/>
+      <circle cx="19" cy="18" r="5" fill="#DF3D35"/>
+      <text x="34" y="23" fill="#52657B" font-size="10">DEVOPS &amp; CI/CD</text>
+    </g>
+    <g transform="translate(116 589) rotate(-9)">
+      <rect width="180" height="36" rx="18" fill="#fff" stroke="#E1E8EC"/>
+      <circle cx="19" cy="18" r="5" fill="#52A9BC"/>
+      <text x="34" y="23" fill="#52657B" font-size="10">IDENTITY &amp; ACCESS</text>
+    </g>
+  </g>
+
+  <g transform="translate(392 731)">
+    <rect width="246" height="39" rx="19.5" fill="#fff" stroke="#E0E8EC"/>
+    <circle cx="20" cy="19.5" r="5" fill="#DF3D35"/>
+    <text x="37" y="24" fill="#52657B" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="1.5">ONE CONNECTED SYSTEM</text>
   </g>
 </svg>
