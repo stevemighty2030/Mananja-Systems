@@ -38,5 +38,13 @@ vercel
 
 Use `vercel --prod` when you are ready to create a production deployment. See [Vercel's Docker deployment guide](https://vercel.com/kb/guide/docker) for platform requirements and local development details.
 
-The contact link opens an email draft addressed to `hello@mananja.system`. Change that address or connect the contact flow to your email or CRM provider before launch.
+The consultation form sends requests to `wambu2040@gmail.com` through SMTP. Configure these environment variables in the deployment settings before using the form:
+
+- `MAIL_HOST` (defaults to `smtp.gmail.com`)
+- `MAIL_PORT` (defaults to `587`)
+- `MAIL_USERNAME` (the Gmail account used to send the message)
+- `MAIL_PASSWORD` (a Google App Password for that account)
+- `CONTACT_EMAIL` (defaults to `wambu2040@gmail.com`)
+
+For Gmail, use an App Password rather than your regular account password. Add the values in Vercel under **Project Settings → Environment Variables**, then redeploy. The visitor's email address is set as the reply-to address so you can reply directly.
 # Mananja-Systems

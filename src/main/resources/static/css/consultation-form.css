@@ -89,7 +89,10 @@
   transition: background .18s ease, transform .18s ease;
 }
 .consultation-form button:hover { background: #c92f2a; transform: translateY(-1px); }
+.consultation-form button:disabled { opacity: .72; cursor: wait; transform: none; }
 .consultation-note { margin: 14px 0 0; color: #68778c; font-size: .86rem; line-height: 1.5; }
+.consultation-note.is-success { color: #18864b; }
+.consultation-note.is-error { color: #bb302a; }
 
 .consultation-benefits { max-width: 610px; }
 .consultation-benefits .eyebrow { color: #ff5a52; }

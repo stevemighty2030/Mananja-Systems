@@ -229,17 +229,34 @@ const consultationForm = document.querySelector('#consultationForm');
 consultationForm?.addEventListener('submit', (event) => {
   event.preventDefault();
   const formData = new FormData(consultationForm);
-  const subject = 'Consultation request';
-  const message = [
-    `Name: ${formData.get('name')}`,
-    `Email: ${formData.get('email')}`,
-    `Phone: ${formData.get('phone') || 'Not provided'}`,
-    `Area of interest: ${formData.get('interest')}`,
-    '',
-    'Project details:',
-    formData.get('message')
-  ].join('\n');
-  window.location.href = `mailto:wambu2040@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+  const button = consultationForm.querySelector('button[type="submit"]');
+  const status = document.querySelector('.consultation-note');
+  const originalButtonContent = button.innerHTML;
+  button.disabled = true;
+  button.textContent = 'Sending request...';
+  status.textContent = 'Sending your consultation request...';
+  status.classList.remove('is-error', 'is-success');
+
+  fetch('/api/consultations', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    body: JSON.stringify(Object.fromEntries(formData.entries()))
+  })
+    .then(async (response) => {
+      const result = await response.json();
+      if (!response.ok) throw new Error(result.message || 'We could not send your request. Please try again.');
+      status.textContent = result.message;
+      status.classList.add('is-success');
+      consultationForm.reset();
+    })
+    .catch((error) => {
+      status.textContent = error.message || 'We could not send your request. Please try again.';
+      status.classList.add('is-error');
+    })
+    .finally(() => {
+      button.disabled = false;
+      button.innerHTML = originalButtonContent;
+    });
 });
 
 document.querySelectorAll('.technology-contact-form').forEach((form) => {
