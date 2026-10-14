@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="utf-8">
@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" th:href="@{/css/site.css}" href="/css/site.css">
   <link rel="stylesheet" th:href="@{/css/services-page.css}" href="/css/services-page.css">
+  <link rel="stylesheet" th:href="@{/css/site-footer.css}" href="/css/site-footer.css">
 </head>
 <body id="top">
   <header class="site-header">
@@ -60,7 +61,7 @@
 
     <section class="services-cta" id="contact"><div class="wrap services-cta-inner"><div><div class="eyebrow light">Start with a conversation</div><h2>What needs to<br><em>work together?</em></h2></div><div><p>Tell us where you want to make progress. We can help shape a practical next step for your systems and your team.</p><a class="button button-cyan" href="/#contact">Talk with Mananja Systems <span aria-hidden="true">&#8599;</span></a></div></div></section>
   </main>
-  <footer class="footer wrap"><a class="brand" href="/" aria-label="Mananja Systems home"><img src="/mananja-mark.svg" alt=""><span class="brand-name">Mananja Systems</span></a><span>Connected thinking. Practical delivery.</span><small>&copy; <span th:text="${currentYear}">2026</span> Mananja Systems</small><a class="back-top" href="#top" aria-label="Back to top">&#8593;</a></footer>
+  <th:block th:replace="~{fragments/site-footer :: siteFooter}"></th:block>
   <script th:src="@{/js/navigation.js}" src="/js/navigation.js" defer></script>
 </body>
 </html>

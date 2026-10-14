@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="utf-8">
@@ -12,6 +12,7 @@
   <link rel="stylesheet" th:href="@{/css/site.css}" href="/css/site.css">
   <link rel="stylesheet" th:href="@{/css/technology-detail.css}" href="/css/technology-detail.css">
   <link rel="stylesheet" th:href="@{/css/technology-catalog-detail.css}" href="/css/technology-catalog-detail.css">
+  <link rel="stylesheet" th:href="@{/css/site-footer.css}" href="/css/site-footer.css">
 </head>
 <body id="top">
   <header class="site-header">
@@ -68,7 +69,7 @@
 
     <section class="catalog-next-step"><div class="wrap"><div><span class="eyebrow light" th:text="|Your ${technology.name} next step|">Your next step</span><h2>Build a foundation<br><em>your teams can rely on.</em></h2><p th:text="|Tell us what you are building, improving, or integrating with ${technology.name}. We will help you define a practical next step.|">Tell us what you are building and we will help you define a practical next step.</p><a class="button button-primary" href="/#contact">Contact Mananja Systems <span aria-hidden="true">&#8599;</span></a></div><div class="catalog-next-logo"><img th:src="${technologyLogo}" th:alt="|${technology.name} logo|"><span th:text="${technology.name}">Technology</span><i>WITH MANANJA SYSTEMS</i></div></div></section>
   </main>
-  <footer class="footer wrap"><a class="brand" href="/" aria-label="Mananja Systems home"><img src="/mananja-logo-transparent.png" alt="Mananja Systems"></a><span>Better technology. Better together.</span><small>&copy; <span th:text="${currentYear}">2026</span> Mananja Systems</small><a class="back-top" href="#top" aria-label="Back to top">&#8593;</a></footer>
+  <th:block th:replace="~{fragments/site-footer :: siteFooter}"></th:block>
   <script th:src="@{/js/navigation.js}" src="/js/navigation.js" defer></script>
 </body>
 </html>

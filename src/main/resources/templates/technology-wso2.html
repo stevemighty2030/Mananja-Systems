@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="utf-8">
@@ -12,6 +12,7 @@
   <link rel="stylesheet" th:href="@{/css/site.css}" href="/css/site.css">
   <link rel="stylesheet" th:href="@{/css/technology-detail.css}" href="/css/technology-detail.css">
   <link rel="stylesheet" th:href="@{/css/technology-wso2.css}" href="/css/technology-wso2.css">
+  <link rel="stylesheet" th:href="@{/css/site-footer.css}" href="/css/site-footer.css">
 </head>
 <body id="top">
   <header class="site-header">
@@ -79,7 +80,7 @@
       <div class="wrap"><div><span class="eyebrow light">Your WSO2 next step</span><h2>Make your integrations<br><em>work better together.</em></h2><p>Tell us what you are building, improving, or integrating. We will help you define a practical next step for your WSO2 environment.</p><a class="button button-primary" href="/#contact">Contact Mananja Systems <span aria-hidden="true">&#8599;</span></a></div><div class="wso2-next-mark"><img th:src="${technologyLogo}" alt="WSO2 logo"><span>WSO2<br>WITH MANANJA SYSTEMS</span></div></div>
     </section>
   </main>
-  <footer class="footer wrap"><a class="brand" href="/" aria-label="Mananja Systems home"><img src="/mananja-logo-transparent.png" alt="Mananja Systems"></a><span>Better technology. Better together.</span><small>&copy; <span th:text="${currentYear}">2026</span> Mananja Systems</small><a class="back-top" href="#top" aria-label="Back to top">&#8593;</a></footer>
+  <th:block th:replace="~{fragments/site-footer :: siteFooter}"></th:block>
   <script th:src="@{/js/navigation.js}" src="/js/navigation.js" defer></script>
 </body>
 </html>

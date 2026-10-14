@@ -1,0 +1,40 @@
+<footer class="site-footer" th:fragment="siteFooter" aria-label="Site footer">
+  <div class="site-footer-main wrap">
+    <div class="site-footer-about">
+      <a class="site-footer-brand" href="/" aria-label="Mananja Systems home">
+        <img src="/mananja-mark.svg" alt="">
+        <span>MANANJA <b>SYSTEMS</b></span>
+      </a>
+      <p>We connect the platforms, people, and processes that help your business move forward.</p>
+      <a class="site-footer-email" href="mailto:hello@mananja.system">hello@mananja.system <span aria-hidden="true">&#8599;</span></a>
+    </div>
+
+    <nav class="site-footer-links" aria-label="Explore Mananja">
+      <h2>Explore</h2>
+      <a href="/">Home</a>
+      <a href="/company#about">About us</a>
+      <a href="/services">Services</a>
+      <a href="/technologies">Technologies</a>
+    </nav>
+
+    <nav class="site-footer-links" aria-label="Our capabilities">
+      <h2>Capabilities</h2>
+      <a href="/services/api-integrations">API integrations</a>
+      <a href="/technologies/wso2">WSO2</a>
+      <a href="/technologies/red-hat">Red Hat</a>
+      <a href="/technologies/activemq">Apache ActiveMQ</a>
+    </nav>
+
+    <div class="site-footer-cta">
+      <span class="site-footer-kicker">Have a project in mind?</span>
+      <h2>Let’s make your systems work together.</h2>
+      <a href="mailto:hello@mananja.system">Start a conversation <span aria-hidden="true">&#8599;</span></a>
+    </div>
+  </div>
+
+  <div class="site-footer-bottom wrap">
+    <small>&copy; <span th:text="${currentYear}">2026</span> Mananja Systems. All rights reserved.</small>
+    <span class="site-footer-note">Connected thinking. Practical delivery.</span>
+    <a href="#top">Back to top <span aria-hidden="true">&#8593;</span></a>
+  </div>
+</footer>

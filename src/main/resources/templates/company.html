@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="utf-8">
@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" th:href="@{/css/site.css}" href="/css/site.css">
   <link rel="stylesheet" th:href="@{/css/company-page.css}" href="/css/company-page.css">
+  <link rel="stylesheet" th:href="@{/css/site-footer.css}" href="/css/site-footer.css">
 </head>
 <body id="top">
   <header class="site-header">
@@ -28,10 +29,10 @@
 
     <section class="company-careers section wrap" id="careers"><div><div class="eyebrow muted">Careers</div><h2>Interested in building<br><em>connected systems?</em></h2></div><p>We welcome conversations with people working across integration, APIs, cloud, DevOps, observability, and enterprise AI.</p><a href="mailto:hello@mananja.system?subject=Careers%20at%20Mananja">Get in touch about careers <b aria-hidden="true">&#8599;</b></a></section>
 
-    <section class="company-contact" id="contact"><div class="wrap company-contact-grid"><div><div class="eyebrow light">Get in touch</div><h2>Let’s make technology<br><em>work as one.</em></h2></div><div><p>Tell us what you want to connect, improve, or support. We’ll help identify a practical next step.</p><a class="button button-cyan" href="mailto:hello@mananja.system?subject=Mananja%20Systems%20enquiry">Contact Mananja Systems <span aria-hidden="true">&#8599;</span></a></div></div></section>
+    <section class="company-contact" id="contact"><div class="wrap company-contact-grid"><div><div class="eyebrow light">Get in touch</div><h2>Letâ€™s make technology<br><em>work as one.</em></h2></div><div><p>Tell us what you want to connect, improve, or support. Weâ€™ll help identify a practical next step.</p><a class="button button-cyan" href="mailto:hello@mananja.system?subject=Mananja%20Systems%20enquiry">Contact Mananja Systems <span aria-hidden="true">&#8599;</span></a></div></div></section>
     <section class="company-support" id="support"><div class="wrap company-support-inner"><div><div class="eyebrow muted">Customer support</div><h2>Need help with<br><em>your integration?</em></h2></div><div><p>Contact Mananja Systems about support for your APIs, platforms, integrations, or ongoing operations.</p><a href="mailto:hello@mananja.system?subject=Customer%20support">Contact customer support <b aria-hidden="true">&#8599;</b></a></div></div></section>
   </main>
-  <footer class="footer wrap"><a class="brand" href="/" aria-label="Mananja Systems home"><img src="/mananja-mark.svg" alt=""><span class="brand-name">Mananja Systems</span></a><span>Connected thinking. Practical delivery.</span><small>&copy; <span th:text="${currentYear}">2026</span> Mananja Systems</small><a class="back-top" href="#top" aria-label="Back to top">&#8593;</a></footer>
+  <th:block th:replace="~{fragments/site-footer :: siteFooter}"></th:block>
   <script th:src="@{/js/navigation.js}" src="/js/navigation.js" defer></script>
 </body>
 </html>
