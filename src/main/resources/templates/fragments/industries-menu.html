@@ -4,23 +4,64 @@
   <th:block th:fragment="desktop">
     <details class="industries-menu">
       <summary>Industries</summary>
-      <div class="industries-dropdown" aria-label="Industries we support">
-        <div class="industries-menu-intro">
-          <span class="eyebrow muted">Industries we support</span>
-          <h2>Technology for<br>the work you do.</h2>
-          <p>Every sector has its own systems, regulations, and customer expectations. We shape our work around the realities of your organisation.</p>
-          <a href="/#contact">Talk with our team <span aria-hidden="true">&#8599;</span></a>
-        </div>
-        <div class="industries-menu-grid">
-          <a href="/#contact"><span>01 / FINANCIAL SERVICES</span><strong>Banking &amp; Finance</strong><small>Connect core platforms, digital channels, and the services around them.</small></a>
-          <a href="/#contact"><span>02 / DIGITAL FINANCE</span><strong>Fintech</strong><small>Build secure integrations that help digital products evolve with customers.</small></a>
-          <a href="/#contact"><span>03 / COMMUNICATIONS</span><strong>Telecommunications</strong><small>Link platforms and automate processes across complex service environments.</small></a>
-          <a href="/#contact"><span>04 / CARE DELIVERY</span><strong>Healthcare</strong><small>Support secure information flow between teams, systems, and services.</small></a>
-          <a href="/#contact"><span>05 / COMMERCE</span><strong>Retail &amp; eCommerce</strong><small>Connect customer journeys, inventory, payments, and back-office systems.</small></a>
-          <a href="/#contact"><span>06 / DIGITAL DELIVERY</span><strong>Technology teams</strong><small>Improve delivery pipelines, platform operations, and engineering workflows.</small></a>
-          <a href="/#contact"><span>07 / MEMBER SERVICES</span><strong>SACCOs &amp; cooperatives</strong><small>Connect member platforms, financial services, and operational processes.</small></a>
-          <a href="/#contact"><span>08 / SERVICE INDUSTRIES</span><strong>Hospitality &amp; services</strong><small>Bring booking, customer, and operational systems into a more connected flow.</small></a>
-          <a href="/#contact"><span>10 / PUBLIC &amp; MEDIA</span><strong>Public sector &amp; media</strong><small>Support useful digital services and dependable information exchange.</small></a>
+      <div class="solutions-dropdown industries-dropdown" aria-label="Industries we support">
+        <nav class="solutions-categories industries-categories" aria-label="Industry categories">
+          <button class="solutions-choice industries-choice is-active" type="button" data-industry="finance" aria-expanded="true">Banking &amp; Finance <span aria-hidden="true">+</span></button>
+          <button class="solutions-choice industries-choice" type="button" data-industry="fintech" aria-expanded="false">Fintech <span aria-hidden="true">+</span></button>
+          <button class="solutions-choice industries-choice" type="button" data-industry="telecom" aria-expanded="false">Telecommunications <span aria-hidden="true">+</span></button>
+          <button class="solutions-choice industries-choice" type="button" data-industry="healthcare" aria-expanded="false">Healthcare <span aria-hidden="true">+</span></button>
+          <button class="solutions-choice industries-choice" type="button" data-industry="retail" aria-expanded="false">Retail &amp; eCommerce <span aria-hidden="true">+</span></button>
+          <button class="solutions-choice industries-choice" type="button" data-industry="technology" aria-expanded="false">Technology teams <span aria-hidden="true">+</span></button>
+          <button class="solutions-choice industries-choice" type="button" data-industry="sacco" aria-expanded="false">SACCOs &amp; cooperatives <span aria-hidden="true">+</span></button>
+          <button class="solutions-choice industries-choice" type="button" data-industry="hospitality" aria-expanded="false">Hospitality &amp; services <span aria-hidden="true">+</span></button>
+          <button class="solutions-choice industries-choice" type="button" data-industry="public" aria-expanded="false">Public sector &amp; media <span aria-hidden="true">+</span></button>
+        </nav>
+        <div class="solutions-capabilities industries-capabilities" aria-live="polite">
+          <section class="solutions-capability-list is-active" data-industry-panel="finance">
+            <span class="industry-panel-kicker">01 / FINANCIAL SERVICES</span><h2>Banking &amp; Finance</h2>
+            <p>Connect core platforms, digital channels, and the services around them.</p>
+            <a href="/#contact">Discuss financial services <span aria-hidden="true">&#8599;</span></a>
+          </section>
+          <section class="solutions-capability-list" data-industry-panel="fintech" hidden>
+            <span class="industry-panel-kicker">02 / DIGITAL FINANCE</span><h2>Fintech</h2>
+            <p>Build secure integrations that help digital products evolve with customers.</p>
+            <a href="/#contact">Discuss fintech <span aria-hidden="true">&#8599;</span></a>
+          </section>
+          <section class="solutions-capability-list" data-industry-panel="telecom" hidden>
+            <span class="industry-panel-kicker">03 / COMMUNICATIONS</span><h2>Telecommunications</h2>
+            <p>Link platforms and automate processes across complex service environments.</p>
+            <a href="/#contact">Discuss telecommunications <span aria-hidden="true">&#8599;</span></a>
+          </section>
+          <section class="solutions-capability-list" data-industry-panel="healthcare" hidden>
+            <span class="industry-panel-kicker">04 / CARE DELIVERY</span><h2>Healthcare</h2>
+            <p>Support secure information flow between teams, systems, and services.</p>
+            <a href="/#contact">Discuss healthcare <span aria-hidden="true">&#8599;</span></a>
+          </section>
+          <section class="solutions-capability-list" data-industry-panel="retail" hidden>
+            <span class="industry-panel-kicker">05 / COMMERCE</span><h2>Retail &amp; eCommerce</h2>
+            <p>Connect customer journeys, inventory, payments, and back-office systems.</p>
+            <a href="/#contact">Discuss retail and eCommerce <span aria-hidden="true">&#8599;</span></a>
+          </section>
+          <section class="solutions-capability-list" data-industry-panel="technology" hidden>
+            <span class="industry-panel-kicker">06 / DIGITAL DELIVERY</span><h2>Technology teams</h2>
+            <p>Improve delivery pipelines, platform operations, and engineering workflows.</p>
+            <a href="/#contact">Discuss technology projects <span aria-hidden="true">&#8599;</span></a>
+          </section>
+          <section class="solutions-capability-list" data-industry-panel="sacco" hidden>
+            <span class="industry-panel-kicker">07 / MEMBER SERVICES</span><h2>SACCOs &amp; cooperatives</h2>
+            <p>Connect member platforms, financial services, and operational processes.</p>
+            <a href="/#contact">Discuss SACCOs and cooperatives <span aria-hidden="true">&#8599;</span></a>
+          </section>
+          <section class="solutions-capability-list" data-industry-panel="hospitality" hidden>
+            <span class="industry-panel-kicker">09 / SERVICE INDUSTRIES</span><h2>Hospitality &amp; services</h2>
+            <p>Bring booking, customer, and operational systems into a more connected flow.</p>
+            <a href="/#contact">Discuss hospitality and services <span aria-hidden="true">&#8599;</span></a>
+          </section>
+          <section class="solutions-capability-list" data-industry-panel="public" hidden>
+            <span class="industry-panel-kicker">10 / PUBLIC &amp; MEDIA</span><h2>Public sector &amp; media</h2>
+            <p>Support useful digital services and dependable information exchange.</p>
+            <a href="/#contact">Discuss public sector and media <span aria-hidden="true">&#8599;</span></a>
+          </section>
         </div>
       </div>
     </details>
@@ -30,15 +71,15 @@
     <details class="mobile-industries-menu">
       <summary>Industries</summary>
       <div class="mobile-industries-dropdown">
-        <a href="/#contact"><strong>Banking &amp; Finance</strong><span>Financial services and core platforms</span></a>
-        <a href="/#contact"><strong>Fintech</strong><span>Secure digital finance integrations</span></a>
-        <a href="/#contact"><strong>Telecommunications</strong><span>Connected platforms and service workflows</span></a>
-        <a href="/#contact"><strong>Healthcare</strong><span>Secure information flow across care</span></a>
-        <a href="/#contact"><strong>Retail &amp; eCommerce</strong><span>Customer, inventory, and payment systems</span></a>
-        <a href="/#contact"><strong>Technology teams</strong><span>Delivery pipelines and platform operations</span></a>
-        <a href="/#contact"><strong>SACCOs &amp; cooperatives</strong><span>Member platforms and financial services</span></a>
-        <a href="/#contact"><strong>Hospitality &amp; services</strong><span>Booking and operational systems</span></a>
-        <a href="/#contact"><strong>Public sector &amp; media</strong><span>Digital services and information exchange</span></a>
+        <a href="/#contact"><strong>Banking &amp; Finance</strong><span>Connect core platforms, digital channels, and related services.</span></a>
+        <a href="/#contact"><strong>Fintech</strong><span>Build secure integrations for evolving digital products.</span></a>
+        <a href="/#contact"><strong>Telecommunications</strong><span>Link platforms and automate service processes.</span></a>
+        <a href="/#contact"><strong>Healthcare</strong><span>Support secure information flow across teams and systems.</span></a>
+        <a href="/#contact"><strong>Retail &amp; eCommerce</strong><span>Connect customer, inventory, and payment systems.</span></a>
+        <a href="/#contact"><strong>Technology teams</strong><span>Improve delivery pipelines and platform operations.</span></a>
+        <a href="/#contact"><strong>SACCOs &amp; cooperatives</strong><span>Connect member platforms and financial services.</span></a>
+        <a href="/#contact"><strong>Hospitality &amp; services</strong><span>Connect booking, customer, and operating systems.</span></a>
+        <a href="/#contact"><strong>Public sector &amp; media</strong><span>Support digital services and information exchange.</span></a>
       </div>
     </details>
   </th:block>

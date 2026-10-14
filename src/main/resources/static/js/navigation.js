@@ -154,6 +154,23 @@ function setSolution(menu, choice) {
   });
 }
 
+function setIndustry(menu, choice) {
+  const selectedIndustry = choice.dataset.industry;
+  if (!selectedIndustry) return;
+
+  menu.querySelectorAll('.industries-choice').forEach((item) => {
+    const selected = item === choice;
+    item.classList.toggle('is-active', selected);
+    item.setAttribute('aria-expanded', selected ? 'true' : 'false');
+  });
+
+  menu.querySelectorAll('[data-industry-panel]').forEach((panel) => {
+    const selected = panel.dataset.industryPanel === selectedIndustry;
+    panel.hidden = !selected;
+    panel.classList.toggle('is-active', selected);
+  });
+}
+
 document.querySelectorAll('.technologies-menu, .solutions-menu, .industries-menu, .company-menu').forEach((menu) => {
   const closeMenu = () => {
     menu.removeAttribute('open');
@@ -182,6 +199,12 @@ document.querySelectorAll('.technologies-menu, .solutions-menu, .industries-menu
     choice.addEventListener('pointerenter', () => setSolution(menu, choice));
     choice.addEventListener('focus', () => setSolution(menu, choice));
     choice.addEventListener('click', () => setSolution(menu, choice));
+  });
+
+  menu.querySelectorAll('.industries-choice').forEach((choice) => {
+    choice.addEventListener('pointerenter', () => setIndustry(menu, choice));
+    choice.addEventListener('focus', () => setIndustry(menu, choice));
+    choice.addEventListener('click', () => setIndustry(menu, choice));
   });
 });
 
