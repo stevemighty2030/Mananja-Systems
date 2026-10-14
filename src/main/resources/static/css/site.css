@@ -278,3 +278,10 @@ h1,h2,h3{font-family:Montserrat,Inter,sans-serif;letter-spacing:-.045em}
 .company-menu[open]>summary:after{transform:rotate(225deg);margin-bottom:-1px}
 .company-menu:after{height:22px}
 @media(max-width:1000px) and (min-width:681px){.company-menu{padding-inline:10px;margin-inline:-10px}}
+
+/* Match the dropdown indicators used by Company. */
+.technologies-menu,.solutions-menu{padding:10px 14px;margin:-10px -14px}
+.technologies-menu>summary:after,.solutions-menu>summary:after,.mobile-technologies-menu>summary:after,.mobile-solutions-menu>summary:after{display:inline-block;width:7px;height:7px;margin:0 1px 3px 8px;border-right:1.5px solid #df3d35;border-bottom:1.5px solid #df3d35;content:"";transform:rotate(45deg);transition:transform .16s}
+.technologies-menu[open]>summary:after,.solutions-menu[open]>summary:after,.mobile-technologies-menu[open]>summary:after,.mobile-solutions-menu[open]>summary:after{transform:rotate(225deg);margin-bottom:-1px}
+.technologies-menu:after,.solutions-menu:after{height:22px}
+@media(max-width:1000px) and (min-width:681px){.technologies-menu,.solutions-menu{padding-inline:10px;margin-inline:-10px}}
