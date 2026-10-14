@@ -26,5 +26,17 @@ mvn clean package
 java -jar target/mananja-system-0.0.1-SNAPSHOT.jar
 ```
 
+## Deploy to Vercel
+
+Vercel can build and run this Spring Boot app from `Dockerfile.vercel`. Import the repository in Vercel, or deploy it with the Vercel CLI from the repository root. Vercel detects the Dockerfile and routes HTTP requests to the container. The app reads Vercel's `PORT` environment variable through `application.properties`.
+
+For a CLI deployment, install and authenticate the Vercel CLI, then run:
+
+```powershell
+vercel
+```
+
+Use `vercel --prod` when you are ready to create a production deployment. See [Vercel's Docker deployment guide](https://vercel.com/kb/guide/docker) for platform requirements and local development details.
+
 The contact link opens an email draft addressed to `hello@mananja.system`. Change that address or connect the contact flow to your email or CRM provider before launch.
 # Mananja-Systems
