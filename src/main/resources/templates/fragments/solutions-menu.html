@@ -1,0 +1,48 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+  <th:block th:fragment="desktop">
+    <details class="solutions-menu">
+      <summary>Solutions</summary>
+      <div class="solutions-dropdown" aria-label="Mananja solutions">
+        <a class="solutions-menu-card" href="/#services">
+          <span>01 / CONNECT</span>
+          <h2>System integration</h2>
+          <p>Bring business applications, data, and workflows together through dependable integrations.</p>
+          <b>Explore services <span aria-hidden="true">&#8599;</span></b>
+        </a>
+        <a class="solutions-menu-card" href="/services/api-integrations">
+          <span>02 / MANAGE</span>
+          <h2>API platforms</h2>
+          <p>Design, implement, and improve APIs that make digital services easier to connect and govern.</p>
+          <b>Explore services <span aria-hidden="true">&#8599;</span></b>
+        </a>
+        <a class="solutions-menu-card" href="/#services">
+          <span>03 / AUTOMATE</span>
+          <h2>Enterprise AI</h2>
+          <p>Connect AI capabilities to enterprise systems and workflows with care for security and oversight.</p>
+          <b>Explore services <span aria-hidden="true">&#8599;</span></b>
+        </a>
+        <a class="solutions-menu-card" href="/services">
+          <span>04 / OPERATE</span>
+          <h2>Cloud, DevOps &amp; observability</h2>
+          <p>Improve delivery, infrastructure, and visibility across the services your teams operate.</p>
+          <b>Explore services <span aria-hidden="true">&#8599;</span></b>
+        </a>
+      </div>
+    </details>
+  </th:block>
+
+  <th:block th:fragment="mobile">
+    <details class="mobile-solutions-menu">
+      <summary>Solutions</summary>
+      <div class="mobile-solutions-dropdown">
+        <a href="/#services"><span>01 / CONNECT</span><strong>System integration</strong></a>
+        <a href="/services/api-integrations"><span>02 / MANAGE</span><strong>API platforms</strong></a>
+        <a href="/#services"><span>03 / AUTOMATE</span><strong>Enterprise AI</strong></a>
+        <a href="/services"><span>04 / OPERATE</span><strong>Cloud, DevOps &amp; observability</strong></a>
+      </div>
+    </details>
+  </th:block>
+</body>
+</html>

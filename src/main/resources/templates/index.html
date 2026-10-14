@@ -11,15 +11,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" th:href="@{/css/site.css}" href="/css/site.css">
   <link rel="stylesheet" th:href="@{/css/site-footer.css}" href="/css/site-footer.css">
+  <link rel="stylesheet" th:href="@{/css/solutions-menu.css}" href="/css/solutions-menu.css">
 </head>
 <body id="top">
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Mananja Systems home"><img src="/mananja-mark.svg" alt=""><span class="brand-name">Mananja Systems</span></a>
     <details class="mobile-menu">
       <summary aria-label="Open navigation"><span></span><span></span></summary>
-      <nav aria-label="Mobile navigation"><a href="/company#about">About</a><a href="#industries">Industries</a><th:block th:replace="~{fragments/technologies-menu :: mobile}"></th:block><a href="#solutions">Solutions</a><details class="mobile-company-menu"><summary>Company</summary><div class="company-dropdown"><a href="/company#about">About</a><a href="/company#contact">Get In Touch</a><a href="/company#pricing">Pricing</a><a href="/company#leadership">Leadership</a><a href="/company#careers">Careers</a><a href="/company#support">Customer Support</a></div></details><a href="#contact">Contact</a></nav>
+      <nav aria-label="Mobile navigation"><a href="/company#about">About</a><a href="#industries">Industries</a><th:block th:replace="~{fragments/technologies-menu :: mobile}"></th:block><th:block th:replace="~{fragments/solutions-menu :: mobile}"></th:block><details class="mobile-company-menu"><summary>Company</summary><div class="company-dropdown"><a href="/company#about">About</a><a href="/company#contact">Get In Touch</a><a href="/company#pricing">Pricing</a><a href="/company#leadership">Leadership</a><a href="/company#careers">Careers</a><a href="/company#support">Customer Support</a></div></details><a href="#contact">Contact</a></nav>
     </details>
-    <nav class="desktop-nav" aria-label="Main navigation"><a href="/company#about">About</a><a href="#industries">Industries</a><a href="#solutions">Solutions</a><th:block th:replace="~{fragments/technologies-menu :: desktop}"></th:block><details class="company-menu"><summary>Company</summary><div class="company-dropdown"><a href="/company#about">About</a><a href="/company#contact">Get In Touch</a><a href="/company#pricing">Pricing</a><a href="/company#leadership">Leadership</a><a href="/company#careers">Careers</a><a href="/company#support">Customer Support</a></div></details><a class="nav-contact" href="#contact">Let?s talk <span aria-hidden="true">&#8599;</span></a></nav>
+    <nav class="desktop-nav" aria-label="Main navigation"><a href="/company#about">About</a><a href="#industries">Industries</a><th:block th:replace="~{fragments/technologies-menu :: desktop}"></th:block><th:block th:replace="~{fragments/solutions-menu :: desktop}"></th:block><details class="company-menu"><summary>Company</summary><div class="company-dropdown"><a href="/company#about">About</a><a href="/company#contact">Get In Touch</a><a href="/company#pricing">Pricing</a><a href="/company#leadership">Leadership</a><a href="/company#careers">Careers</a><a href="/company#support">Customer Support</a></div></details><a class="nav-contact" href="#contact">Let?s talk <span aria-hidden="true">&#8599;</span></a></nav>
   </header>
 
   <main>
