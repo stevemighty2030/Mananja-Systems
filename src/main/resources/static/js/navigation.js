@@ -154,7 +154,7 @@ function setSolution(menu, choice) {
   });
 }
 
-document.querySelectorAll('.technologies-menu, .solutions-menu, .company-menu').forEach((menu) => {
+document.querySelectorAll('.technologies-menu, .solutions-menu, .industries-menu, .company-menu').forEach((menu) => {
   const closeMenu = () => {
     menu.removeAttribute('open');
     if (menu.contains(document.activeElement)) document.activeElement.blur();

@@ -1,0 +1,46 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+  <th:block th:fragment="desktop">
+    <details class="industries-menu">
+      <summary>Industries</summary>
+      <div class="industries-dropdown" aria-label="Industries we support">
+        <div class="industries-menu-intro">
+          <span class="eyebrow muted">Industries we support</span>
+          <h2>Technology for<br>the work you do.</h2>
+          <p>Every sector has its own systems, regulations, and customer expectations. We shape our work around the realities of your organisation.</p>
+          <a href="/#contact">Talk with our team <span aria-hidden="true">&#8599;</span></a>
+        </div>
+        <div class="industries-menu-grid">
+          <a href="/#contact"><span>01 / FINANCIAL SERVICES</span><strong>Banking &amp; Finance</strong><small>Connect core platforms, digital channels, and the services around them.</small></a>
+          <a href="/#contact"><span>02 / DIGITAL FINANCE</span><strong>Fintech</strong><small>Build secure integrations that help digital products evolve with customers.</small></a>
+          <a href="/#contact"><span>03 / COMMUNICATIONS</span><strong>Telecommunications</strong><small>Link platforms and automate processes across complex service environments.</small></a>
+          <a href="/#contact"><span>04 / CARE DELIVERY</span><strong>Healthcare</strong><small>Support secure information flow between teams, systems, and services.</small></a>
+          <a href="/#contact"><span>05 / COMMERCE</span><strong>Retail &amp; eCommerce</strong><small>Connect customer journeys, inventory, payments, and back-office systems.</small></a>
+          <a href="/#contact"><span>06 / DIGITAL DELIVERY</span><strong>Technology teams</strong><small>Improve delivery pipelines, platform operations, and engineering workflows.</small></a>
+          <a href="/#contact"><span>07 / MEMBER SERVICES</span><strong>SACCOs &amp; cooperatives</strong><small>Connect member platforms, financial services, and operational processes.</small></a>
+          <a href="/#contact"><span>08 / SERVICE INDUSTRIES</span><strong>Hospitality &amp; services</strong><small>Bring booking, customer, and operational systems into a more connected flow.</small></a>
+          <a href="/#contact"><span>10 / PUBLIC &amp; MEDIA</span><strong>Public sector &amp; media</strong><small>Support useful digital services and dependable information exchange.</small></a>
+        </div>
+      </div>
+    </details>
+  </th:block>
+
+  <th:block th:fragment="mobile">
+    <details class="mobile-industries-menu">
+      <summary>Industries</summary>
+      <div class="mobile-industries-dropdown">
+        <a href="/#contact"><strong>Banking &amp; Finance</strong><span>Financial services and core platforms</span></a>
+        <a href="/#contact"><strong>Fintech</strong><span>Secure digital finance integrations</span></a>
+        <a href="/#contact"><strong>Telecommunications</strong><span>Connected platforms and service workflows</span></a>
+        <a href="/#contact"><strong>Healthcare</strong><span>Secure information flow across care</span></a>
+        <a href="/#contact"><strong>Retail &amp; eCommerce</strong><span>Customer, inventory, and payment systems</span></a>
+        <a href="/#contact"><strong>Technology teams</strong><span>Delivery pipelines and platform operations</span></a>
+        <a href="/#contact"><strong>SACCOs &amp; cooperatives</strong><span>Member platforms and financial services</span></a>
+        <a href="/#contact"><strong>Hospitality &amp; services</strong><span>Booking and operational systems</span></a>
+        <a href="/#contact"><strong>Public sector &amp; media</strong><span>Digital services and information exchange</span></a>
+      </div>
+    </details>
+  </th:block>
+</body>
+</html>

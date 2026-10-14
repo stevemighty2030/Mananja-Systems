@@ -12,15 +12,16 @@
   <link rel="stylesheet" th:href="@{/css/site.css}" href="/css/site.css">
   <link rel="stylesheet" th:href="@{/css/site-footer.css}" href="/css/site-footer.css">
   <link rel="stylesheet" th:href="@{/css/solutions-menu.css}" href="/css/solutions-menu.css">
+  <link rel="stylesheet" th:href="@{/css/industries-menu.css}" href="/css/industries-menu.css">
 </head>
 <body id="top">
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Mananja Systems home"><img src="/mananja-mark.svg" alt=""><span class="brand-name">Mananja Systems</span></a>
     <details class="mobile-menu">
       <summary aria-label="Open navigation"><span></span><span></span></summary>
-      <nav aria-label="Mobile navigation"><a href="/company#about">About</a><a href="#industries">Industries</a><th:block th:replace="~{fragments/technologies-menu :: mobile}"></th:block><th:block th:replace="~{fragments/solutions-menu :: mobile}"></th:block><details class="mobile-company-menu"><summary>Company</summary><div class="company-dropdown"><a href="/company#about">About</a><a href="/company#contact">Get In Touch</a><a href="/company#pricing">Pricing</a><a href="/company#leadership">Leadership</a><a href="/company#careers">Careers</a><a href="/company#support">Customer Support</a></div></details><a href="#contact">Contact</a></nav>
+      <nav aria-label="Mobile navigation"><a href="/company#about">About</a><th:block th:replace="~{fragments/industries-menu :: mobile}"></th:block><th:block th:replace="~{fragments/technologies-menu :: mobile}"></th:block><th:block th:replace="~{fragments/solutions-menu :: mobile}"></th:block><details class="mobile-company-menu"><summary>Company</summary><div class="company-dropdown"><a href="/company#about">About</a><a href="/company#contact">Get In Touch</a><a href="/company#pricing">Pricing</a><a href="/company#leadership">Leadership</a><a href="/company#careers">Careers</a><a href="/company#support">Customer Support</a></div></details><a href="#contact">Contact</a></nav>
     </details>
-    <nav class="desktop-nav" aria-label="Main navigation"><a href="/company#about">About</a><a href="#industries">Industries</a><th:block th:replace="~{fragments/technologies-menu :: desktop}"></th:block><th:block th:replace="~{fragments/solutions-menu :: desktop}"></th:block><details class="company-menu"><summary>Company</summary><div class="company-dropdown"><a href="/company#about">About</a><a href="/company#contact">Get In Touch</a><a href="/company#pricing">Pricing</a><a href="/company#leadership">Leadership</a><a href="/company#careers">Careers</a><a href="/company#support">Customer Support</a></div></details><a class="nav-contact" href="#contact">Let?s talk <span aria-hidden="true">&#8599;</span></a></nav>
+    <nav class="desktop-nav" aria-label="Main navigation"><a href="/company#about">About</a><th:block th:replace="~{fragments/industries-menu :: desktop}"></th:block><th:block th:replace="~{fragments/technologies-menu :: desktop}"></th:block><th:block th:replace="~{fragments/solutions-menu :: desktop}"></th:block><details class="company-menu"><summary>Company</summary><div class="company-dropdown"><a href="/company#about">About</a><a href="/company#contact">Get In Touch</a><a href="/company#pricing">Pricing</a><a href="/company#leadership">Leadership</a><a href="/company#careers">Careers</a><a href="/company#support">Customer Support</a></div></details><a class="nav-contact" href="#contact">Let?s talk <span aria-hidden="true">&#8599;</span></a></nav>
   </header>
 
   <main>
@@ -50,22 +51,6 @@
       </div>
       <div class="service-note"><span>Need a mix of services?</span><a href="#contact">Let's shape the right engagement <b aria-hidden="true">&#10003;</b></a></div>
     </section>
-
-    <section class="industries-section" id="industries"><div class="wrap">
-      <div class="section-heading"><div><div class="eyebrow muted">Industries we support</div><h2>Technology for the<br><em>work you do.</em></h2></div><p>Every sector has its own systems, regulations, and customer expectations. We shape our work around the realities of your organisation.</p></div>
-      <div class="industry-grid">
-        <article><span class="industry-icon">&#9670;</span><div><small>01 / FINANCIAL SERVICES</small><h3>Banking &amp; Finance</h3><p>Connect core platforms, digital channels, and the services around them.</p></div><a href="#contact" aria-label="Discuss financial services projects">&#8599;</a></article>
-        <article><span class="industry-icon">&#9670;</span><div><small>02 / DIGITAL FINANCE</small><h3>Fintech</h3><p>Build secure integrations that help digital products evolve with customers.</p></div><a href="#contact" aria-label="Discuss fintech projects">&#8599;</a></article>
-        <article><span class="industry-icon">&#9670;</span><div><small>03 / COMMUNICATIONS</small><h3>Telecommunications</h3><p>Link platforms and automate processes across complex service environments.</p></div><a href="#contact" aria-label="Discuss telecommunications projects">&#8599;</a></article>
-        <article><span class="industry-icon">&#9670;</span><div><small>04 / CARE DELIVERY</small><h3>Healthcare</h3><p>Support secure information flow between teams, systems, and services.</p></div><a href="#contact" aria-label="Discuss healthcare projects">&#8599;</a></article>
-        <article><span class="industry-icon">&#9670;</span><div><small>05 / COMMERCE</small><h3>Retail &amp; eCommerce</h3><p>Connect customer journeys, inventory, payments, and back-office systems.</p></div><a href="#contact" aria-label="Discuss retail projects">&#8599;</a></article>
-        <article><span class="industry-icon">&#9670;</span><div><small>06 / DIGITAL DELIVERY</small><h3>Technology teams</h3><p>Improve delivery pipelines, platform operations, and engineering workflows.</p></div><a href="#contact" aria-label="Discuss technology projects">&#8599;</a></article>
-        <article><span class="industry-icon">&#9670;</span><div><small>07 / MEMBER SERVICES</small><h3>SACCOs &amp; cooperatives</h3><p>Connect member platforms, financial services, and operational processes.</p></div><a href="#contact" aria-label="Discuss SACCO projects">&#8599;</a></article>
-        <!-- <article><span class="industry-icon">&#9670;</span><div><small>08 / INDUSTRY &amp; LOGISTICS</small><h3>Industrial &amp; transport</h3><p>Coordinate data and workflows across assets, supply chains, and teams.</p></div><a href="#contact" aria-label="Discuss industrial and transport projects">&#8599;</a></article> -->
-        <article><span class="industry-icon">&#9670;</span><div><small>09 / SERVICE INDUSTRIES</small><h3>Hospitality &amp; services</h3><p>Bring booking, customer, and operational systems into a more connected flow.</p></div><a href="#contact" aria-label="Discuss hospitality projects">&#8599;</a></article>
-        <article><span class="industry-icon">&#9670;</span><div><small>10 / PUBLIC &amp; MEDIA</small><h3>Public sector &amp; media</h3><p>Support useful digital services and dependable information exchange.</p></div><a href="#contact" aria-label="Discuss public sector and media projects">&#8599;</a></article>
-      </div>
-    </div></section>
 
 
 
