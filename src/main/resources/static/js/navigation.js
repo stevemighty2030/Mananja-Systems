@@ -137,6 +137,23 @@ function setTechnology(menu, choice) {
   populateLinks('[data-technology-resources]', profile.resources);
 }
 
+function setSolution(menu, choice) {
+  const selectedSolution = choice.dataset.solution;
+  if (!selectedSolution) return;
+
+  menu.querySelectorAll('.solutions-choice').forEach((item) => {
+    const selected = item === choice;
+    item.classList.toggle('is-active', selected);
+    item.setAttribute('aria-expanded', selected ? 'true' : 'false');
+  });
+
+  menu.querySelectorAll('[data-solution-panel]').forEach((panel) => {
+    const selected = panel.dataset.solutionPanel === selectedSolution;
+    panel.hidden = !selected;
+    panel.classList.toggle('is-active', selected);
+  });
+}
+
 document.querySelectorAll('.technologies-menu, .solutions-menu, .company-menu').forEach((menu) => {
   const closeMenu = () => {
     menu.removeAttribute('open');
@@ -159,6 +176,12 @@ document.querySelectorAll('.technologies-menu, .solutions-menu, .company-menu').
   menu.querySelectorAll('.technology-choice').forEach((choice) => {
     choice.addEventListener('pointerenter', () => setTechnology(menu, choice));
     choice.addEventListener('focus', () => setTechnology(menu, choice));
+  });
+
+  menu.querySelectorAll('.solutions-choice').forEach((choice) => {
+    choice.addEventListener('pointerenter', () => setSolution(menu, choice));
+    choice.addEventListener('focus', () => setSolution(menu, choice));
+    choice.addEventListener('click', () => setSolution(menu, choice));
   });
 });
 
