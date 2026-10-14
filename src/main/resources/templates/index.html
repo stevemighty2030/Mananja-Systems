@@ -14,15 +14,16 @@
   <link rel="stylesheet" th:href="@{/css/solutions-menu.css}" href="/css/solutions-menu.css">
   <link rel="stylesheet" th:href="@{/css/industries-menu.css}" href="/css/industries-menu.css">
   <link rel="stylesheet" th:href="@{/css/integration-feature.css}" href="/css/integration-feature.css">
+  <link rel="stylesheet" th:href="@{/css/consultation-form.css}" href="/css/consultation-form.css">
 </head>
 <body id="top">
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Mananja Systems home"><img src="/mananja-mark.svg" alt=""><span class="brand-name">Mananja Systems</span></a>
     <details class="mobile-menu">
       <summary aria-label="Open navigation"><span></span><span></span></summary>
-      <nav aria-label="Mobile navigation"><a href="/company#about">About</a><th:block th:replace="~{fragments/solutions-menu :: mobile}"></th:block><th:block th:replace="~{fragments/technologies-menu :: mobile}"></th:block><th:block th:replace="~{fragments/industries-menu :: mobile}"></th:block><details class="mobile-company-menu"><summary>Company</summary><div class="company-dropdown"><a href="/company#about">About</a><a href="/company#contact">Get In Touch</a><a href="/company#pricing">Pricing</a><a href="/company#leadership">Leadership</a><a href="/company#careers">Careers</a><a href="/company#support">Customer Support</a></div></details><a href="#contact">Contact</a></nav>
+      <nav aria-label="Mobile navigation"><a href="/company#about">About</a><th:block th:replace="~{fragments/solutions-menu :: mobile}"></th:block><th:block th:replace="~{fragments/technologies-menu :: mobile}"></th:block><th:block th:replace="~{fragments/industries-menu :: mobile}"></th:block><details class="mobile-company-menu"><summary>Company</summary><div class="company-dropdown"><a href="/company#about">About</a><a href="/company#contact">Get In Touch</a><a href="/company#pricing">Pricing</a><a href="/company#leadership">Leadership</a><a href="/company#careers">Careers</a><a href="/company#support">Customer Support</a></div></details><a href="/#contact">Let's talk</a></nav>
     </details>
-    <nav class="desktop-nav" aria-label="Main navigation"><a href="/company#about">About</a><th:block th:replace="~{fragments/solutions-menu :: desktop}"></th:block><th:block th:replace="~{fragments/technologies-menu :: desktop}"></th:block><th:block th:replace="~{fragments/industries-menu :: desktop}"></th:block><details class="company-menu"><summary>Company</summary><div class="company-dropdown"><a href="/company#about">About</a><a href="/company#contact">Get In Touch</a><a href="/company#pricing">Pricing</a><a href="/company#leadership">Leadership</a><a href="/company#careers">Careers</a><a href="/company#support">Customer Support</a></div></details><a class="nav-contact" href="#contact">Let?s talk <span aria-hidden="true">&#8599;</span></a></nav>
+    <nav class="desktop-nav" aria-label="Main navigation"><a href="/company#about">About</a><th:block th:replace="~{fragments/solutions-menu :: desktop}"></th:block><th:block th:replace="~{fragments/technologies-menu :: desktop}"></th:block><th:block th:replace="~{fragments/industries-menu :: desktop}"></th:block><details class="company-menu"><summary>Company</summary><div class="company-dropdown"><a href="/company#about">About</a><a href="/company#contact">Get In Touch</a><a href="/company#pricing">Pricing</a><a href="/company#leadership">Leadership</a><a href="/company#careers">Careers</a><a href="/company#support">Customer Support</a></div></details><a class="nav-contact" href="/#contact">Let's talk <span aria-hidden="true">&#8599;</span></a></nav>
   </header>
 
   <main>
@@ -76,7 +77,34 @@
 
 
 
-    <section class="contact" id="contact"><div class="contact-inner wrap"><div><div class="eyebrow light">Ready to make progress?</div><h2>Let's solve<br><em>what's next.</em></h2></div><div class="contact-copy"><p>Tell us about the opportunity or challenge in front of your team. We'll help you find a practical place to begin.</p><a class="button button-cyan" href="mailto:hello@mananja.system?subject=Project%20enquiry">Start the conversation <span aria-hidden="true">&#8599;</span></a><div class="contact-email">Prefer email? <a href="mailto:hello@mananja.system">hello@mananja.system</a></div></div></div></section>
+    <section class="consultation-section" id="contact">
+      <div class="wrap consultation-layout">
+        <div class="consultation-card">
+          <div class="eyebrow muted">Start a conversation</div>
+          <h2>Request a consultation</h2>
+          <p class="consultation-intro">Tell us a little about what you need. Our team will follow up to discuss a useful next step.</p>
+          <form id="consultationForm" class="consultation-form">
+            <label>Your name<input name="name" autocomplete="name" placeholder="Your name" required></label>
+            <label>Email address<input name="email" type="email" autocomplete="email" placeholder="Email address" required></label>
+            <label>Phone <span>(optional)</span><input name="phone" type="tel" autocomplete="tel" placeholder="Phone number"></label>
+            <label>What do you need?<select name="interest" required><option value="" disabled selected>Select an area</option><option>API integrations</option><option>Cloud &amp; infrastructure</option><option>Software &amp; platforms</option><option>Enterprise AI</option><option>Other</option></select></label>
+            <label class="consultation-message">Tell us about your project<textarea name="message" rows="4" placeholder="What are you looking to achieve?" required></textarea></label>
+            <button type="submit">Send consultation request <span aria-hidden="true">&#8599;</span></button>
+          </form>
+          <p class="consultation-note" aria-live="polite">Your email app will open with your request ready to send.</p>
+        </div>
+        <div class="consultation-benefits">
+          <div class="eyebrow light">Let's talk</div>
+          <h2>Good work starts<br>with a conversation.</h2>
+          <p>We will listen to your goals, understand your environment, and help you plan a practical way forward.</p>
+          <ul>
+            <li><span aria-hidden="true">&#10003;</span><div><strong>Flexible delivery models</strong><p>Remote, in-house, or blended support shaped around your team.</p></div></li>
+            <li><span aria-hidden="true">&#10003;</span><div><strong>Proven technical expertise</strong><p>Experienced specialists across integration, APIs, cloud, and delivery.</p></div></li>
+            <li><span aria-hidden="true">&#10003;</span><div><strong>Focused on your outcomes</strong><p>Clear priorities, useful advice, and a plan that fits your needs.</p></div></li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </main>
 
   <th:block th:replace="~{fragments/site-footer :: siteFooter}"></th:block>

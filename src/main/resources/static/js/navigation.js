@@ -225,6 +225,23 @@ softwareContactForm?.addEventListener('submit', (event) => {
   window.location.href = `mailto:hello@mananja.system?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
 });
 
+const consultationForm = document.querySelector('#consultationForm');
+consultationForm?.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const formData = new FormData(consultationForm);
+  const subject = 'Consultation request';
+  const message = [
+    `Name: ${formData.get('name')}`,
+    `Email: ${formData.get('email')}`,
+    `Phone: ${formData.get('phone') || 'Not provided'}`,
+    `Area of interest: ${formData.get('interest')}`,
+    '',
+    'Project details:',
+    formData.get('message')
+  ].join('\n');
+  window.location.href = `mailto:hello@mananja.system?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+});
+
 document.querySelectorAll('.technology-contact-form').forEach((form) => {
   form.addEventListener('submit', (event) => {
     event.preventDefault();
