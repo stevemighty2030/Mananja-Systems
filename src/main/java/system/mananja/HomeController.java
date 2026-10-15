@@ -27,8 +27,8 @@ public class HomeController {
                     "Bring planning, source control, build pipelines, and releases into a delivery workflow that fits your engineering teams. We help establish repeatable CI/CD, automate releases, and improve how teams coordinate delivery from development through deployment.", List.of("CI/CD pipeline design", "Release automation", "Team workflow improvement"), List.of("Azure Boards and repository setup", "CI/CD pipeline implementation", "Release and environment automation", "Workflow coaching and support"))),
             Map.entry("red-hat", new TechnologyInfo("Red Hat", "Middleware, automation, and cloud platforms",
                     "Plan and support enterprise middleware and cloud environments with an emphasis on stable integration and practical operations. We work across application platforms, automation, and hybrid infrastructure so teams can deploy and operate services consistently.", List.of("Middleware platforms", "Cloud infrastructure", "Automation"), List.of("Middleware and integration platforms", "Hybrid cloud architecture", "Automation and configuration", "Platform operations and support"))),
-            Map.entry("ibm", new TechnologyInfo("IBM", "Enterprise platforms and integration",
-                    "Connect enterprise applications and IBM platforms with integration patterns designed around your systems and operating needs. We help plan platform connections, modernise data exchange, and support dependable operations across enterprise environments.", List.of("Application integration", "Enterprise messaging", "Platform support"), List.of("IBM application integration", "Enterprise messaging connectivity", "Interface modernisation", "Platform migration and support"))),
+            Map.entry("ibm", new TechnologyInfo("IBM Cloud Pak for Integration", "API management, application integration, and event streaming",
+                    "IBM Cloud Pak for Integration brings together capabilities for managing APIs, connecting applications, and building event-driven solutions. We help teams plan how these capabilities fit their architecture, security, and operating model.", List.of("IBM API Connect", "IBM Application Connect Enterprise", "IBM Event Streams"), List.of("Platform architecture and implementation", "API lifecycle and governance", "Application integration and event streaming", "Migration, optimisation, and support"))),
             Map.entry("ibm-mq", new TechnologyInfo("IBM MQ", "Enterprise messaging",
                     "Plan, connect, and support messaging environments that carry business transactions between applications. Our work includes queue design, application connectivity, migration, and operational practices that help protect important message flows.", List.of("Messaging architecture", "Application connectivity", "Operations and support"), List.of("Queue manager and channel design", "Application connectivity", "Resilience and recovery planning", "MQ operations and support"))),
             Map.entry("elk-stack", new TechnologyInfo("ELK Stack", "Logs, search, and operational insight",
@@ -232,6 +232,9 @@ public class HomeController {
         }
         if ("activemq".equals(slug)) {
             return "technology-activemq";
+        }
+        if ("ibm".equals(slug)) {
+            return "technology-ibm";
         }
         return "technology-catalog-detail";
     }
