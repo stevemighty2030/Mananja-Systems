@@ -56,7 +56,7 @@ public class HomeController {
             Map.entry("wso2", "https://www.google.com/s2/favicons?domain=wso2.com&sz=128"),
             Map.entry("activemq", "https://www.google.com/s2/favicons?domain=activemq.apache.org&sz=128"),
             Map.entry("kafka", "https://cdn.simpleicons.org/apachekafka/231F20"),
-            Map.entry("azure-devops", "https://cdn.simpleicons.org/azuredevops/0078D7"),
+            Map.entry("azure-devops", "/technology-logos/azure-devops.svg"),
             Map.entry("red-hat", "https://cdn.simpleicons.org/redhat/EE0000"),
             Map.entry("ibm", "/technology-logos/ibm-cloud-pak-for-integration.svg"),
             Map.entry("ibm-mq", "https://cdn.simpleicons.org/ibm/052FAD"),
