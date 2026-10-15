@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="140" viewBox="0 0 420 140" role="img" aria-labelledby="title desc">
+  <title id="title">IBM Cloud Pak for Integration</title>
+  <desc id="desc">IBM wordmark with a connected integration nodes symbol and Cloud Pak for Integration label.</desc>
+  <rect width="420" height="140" rx="12" fill="#fff"/>
+  <g fill="none" stroke="#0f62fe" stroke-width="5" stroke-linecap="round">
+    <path d="M54 42v18m0 20v18M33 70h18m24 0h18M39 55l12 12m6 6 12 12m0-30L57 67m-6 6L39 85"/>
+  </g>
+  <g fill="#0f62fe"><circle cx="54" cy="33" r="8"/><circle cx="54" cy="107" r="8"/><circle cx="24" cy="70" r="8"/><circle cx="102" cy="70" r="8"/><circle cx="33" cy="49" r="8"/><circle cx="75" cy="91" r="8"/><circle cx="75" cy="49" r="8"/><circle cx="33" cy="91" r="8"/><circle cx="54" cy="70" r="7"/></g>
+  <text x="126" y="69" fill="#161616" font-family="Arial,Helvetica,sans-serif" font-size="43" font-weight="700" letter-spacing="1">IBM</text>
+  <text x="126" y="96" fill="#393939" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="600">Cloud Pak for Integration</text>
+  <path d="M126 108h250" stroke="#0f62fe" stroke-width="3"/>
+</svg>

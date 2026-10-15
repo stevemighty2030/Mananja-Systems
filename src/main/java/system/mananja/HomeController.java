@@ -58,7 +58,7 @@ public class HomeController {
             Map.entry("kafka", "https://cdn.simpleicons.org/apachekafka/231F20"),
             Map.entry("azure-devops", "https://cdn.simpleicons.org/azuredevops/0078D7"),
             Map.entry("red-hat", "https://cdn.simpleicons.org/redhat/EE0000"),
-            Map.entry("ibm", "https://cdn.simpleicons.org/ibm/052FAD"),
+            Map.entry("ibm", "/technology-logos/ibm-cloud-pak-for-integration.svg"),
             Map.entry("ibm-mq", "https://cdn.simpleicons.org/ibm/052FAD"),
             Map.entry("elk-stack", "https://cdn.simpleicons.org/elasticstack/005571"),
             Map.entry("datadog", "https://cdn.simpleicons.org/datadog/632CA6"),
@@ -235,6 +235,12 @@ public class HomeController {
         }
         if ("ibm".equals(slug)) {
             return "technology-ibm";
+        }
+        if ("azure-devops".equals(slug)) {
+            return "technology-platform";
+        }
+        if ("kafka".equals(slug)) {
+            return "technology-platform";
         }
         return "technology-catalog-detail";
     }

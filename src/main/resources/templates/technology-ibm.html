@@ -15,6 +15,7 @@
   <link rel="stylesheet" th:href="@{/css/solutions-menu.css}" href="/css/solutions-menu.css">
   <link rel="stylesheet" th:href="@{/css/industries-menu.css}" href="/css/industries-menu.css">
   <style>
+    .ibm-hero-logo{width:148px!important;height:50px!important;padding:0!important;border-radius:0!important;background:transparent!important;object-fit:contain}
     .ibm-intro,.ibm-products,.ibm-approach{padding:76px 0}
     .ibm-intro{display:grid;grid-template-columns:.9fr 1.1fr;gap:8%;align-items:center}
     .ibm-intro h2,.ibm-section-heading h2{color:#102555;font-size:clamp(34px,4vw,52px);line-height:1.1;letter-spacing:-2px}
@@ -55,7 +56,7 @@
         </div>
         <div class="technology-hero-art" aria-label="IBM Cloud Pak for Integration capabilities">
           <div class="tech-orbit tech-orbit-one"></div><div class="tech-orbit tech-orbit-two"></div>
-          <div class="tech-core"><img th:src="${technologyLogo}" alt="IBM logo"><strong>CLOUD PAK<br>FOR INTEGRATION</strong></div>
+          <div class="tech-core"><img class="ibm-hero-logo" th:src="${technologyLogo}" alt="IBM Cloud Pak for Integration logo"></div>
           <span class="tech-node tech-node-one">APIs</span><span class="tech-node tech-node-two">Apps</span><span class="tech-node tech-node-three">Events</span><span class="tech-node tech-node-four">Governance</span>
           <i class="tech-connector connector-one"></i><i class="tech-connector connector-two"></i><i class="tech-connector connector-three"></i><i class="tech-connector connector-four"></i>
         </div>
