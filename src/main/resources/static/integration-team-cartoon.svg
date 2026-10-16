@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Integration specialist connecting systems</title>
+  <desc id="desc">A cheerful illustrated specialist works at a laptop while API, cloud, and event systems connect around them.</desc>
+  <ellipse cx="266" cy="263" rx="208" ry="19" fill="#0b111b" opacity=".22"/>
+  <path d="M87 125c7-42 45-74 94-69 42 4 73 32 75 72 2 31-17 48-46 57l-87-6c-27-14-42-28-36-54Z" fill="#253650"/>
+  <path d="M110 126c2-33 24-56 56-56 34 0 54 23 54 55v36h-99l-11-35Z" fill="#f2c7a2"/>
+  <path d="M106 126c0-38 23-62 60-62 32 0 53 21 56 53-17-3-33-11-44-25-12 18-39 29-72 29Z" fill="#172b46"/>
+  <path d="M137 128c4 4 9 4 13 0m30 0c4 4 9 4 13 0" stroke="#172b46" stroke-width="3" stroke-linecap="round"/>
+  <path d="M153 148c8 7 18 7 26 0" stroke="#df3d35" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="108" cy="133" r="9" fill="#f2c7a2"/><circle cx="218" cy="133" r="9" fill="#f2c7a2"/>
+  <path d="M111 170c11-14 28-21 52-21 25 0 45 9 60 25l34 69-139 4-25-42 18-35Z" fill="#1685bd"/>
+  <path d="m153 163 12 13 12-13" fill="#fff"/>
+  <path d="m148 181 17 14 17-14-11 48h-12l-11-48Z" fill="#f7fafc"/>
+  <path d="m122 190-31 28m129-25 24 23" stroke="#f2c7a2" stroke-width="15" stroke-linecap="round"/>
+  <path d="M149 236h77l-2 42h-78z" fill="#203954"/>
+  <path d="M142 277h91l-16 14h-62l-13-14Z" fill="#f2c7a2"/>
+  <path d="M240 194h154l-13 92H236l4-92Z" fill="#e5edf3"/>
+  <path d="M253 204h128l-10 70H247l6-70Z" fill="#102b70"/>
+  <path d="M273 235h39m11 0h28m-57 11h49" stroke="#66d8e5" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="297" cy="224" r="5" fill="#f06a60"/><circle cx="329" cy="224" r="5" fill="#66d8e5"/><circle cx="361" cy="224" r="5" fill="#fff"/>
+  <path d="m237 286 157-1 23 13H222l15-12Z" fill="#fff" stroke="#c8d7e1" stroke-width="2" stroke-linejoin="round"/>
+  <path d="m310 195 41-35 33 8" stroke="#6dcbd8" stroke-width="3" stroke-linecap="round" stroke-dasharray="5 7"/>
+  <path d="m231 185-28-47-19-10" stroke="#6dcbd8" stroke-width="3" stroke-linecap="round" stroke-dasharray="5 7"/>
+  <path d="m376 169 41-32 30 1" stroke="#6dcbd8" stroke-width="3" stroke-linecap="round" stroke-dasharray="5 7"/>
+  <g transform="rotate(-8 193 84)"><rect x="154" y="54" width="78" height="37" rx="13" fill="#fff"/><circle cx="171" cy="72" r="5" fill="#df3d35"/><text x="183" y="76" fill="#193455" font-family="Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="1">API</text></g>
+  <g><rect x="311" y="125" width="93" height="39" rx="14" fill="#fff"/><path d="M330 151c-8 0-12-5-12-10 0-5 4-9 9-9 2-6 7-9 13-8 6 0 10 4 11 9 6 0 10 4 10 9 0 5-4 9-10 9h-21Z" fill="#dff3f6"/><text x="366" y="149" fill="#193455" font-family="Arial,sans-serif" font-size="9" font-weight="700" letter-spacing=".6">CLOUD</text></g>
+  <g transform="rotate(7 428 173)"><rect x="397" y="156" width="106" height="36" rx="13" fill="#fff"/><circle cx="414" cy="174" r="5" fill="#1685bd"/><text x="426" y="178" fill="#193455" font-family="Arial,sans-serif" font-size="9" font-weight="700" letter-spacing=".5">EVENTS</text></g>
+  <path d="M104 81 89 69m304 12 16-15M355 88l8-13m-207-28-3-15" stroke="#f06a60" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="73" cy="111" r="5" fill="#66d8e5"/><circle cx="448" cy="105" r="6" fill="#f06a60"/>
+</svg>
